@@ -1,0 +1,23 @@
+- id: "1"
+  name: "Spoken Visual QA"
+  tagline: "Answer questions you can hear."
+  icon: "mic"
+  desc: >
+    Given an image and a language-specific <strong>spoken</strong> question about its
+    content, generate an open-ended answer that is semantically appropriate and grounded
+    in the visual content. This track tests semantic understanding when the question is
+    presented as speech.
+  input: "Image + spoken question"
+  output: "Open-ended answer"
+
+- id: "2"
+  name: "Textual Visual QA"
+  tagline: "Answer questions you can read."
+  icon: "text"
+  desc: >
+    Given an image and a language-specific <strong>textual</strong> question about its
+    content, generate an open-ended answer that is semantically appropriate and grounded
+    in the visual content. This text-based condition reduces the impact of speech
+    recognition errors.
+  input: "Image + text question"
+  output: "Open-ended answer"

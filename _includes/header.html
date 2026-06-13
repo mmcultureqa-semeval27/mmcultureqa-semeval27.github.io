@@ -1,16 +1,26 @@
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="container header-inner">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-      <span class="brand-mark">MCQ</span>
+      <img class="brand-mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="42" height="42">
       <span class="brand-text">
-        <strong>{{ site.logo_text }}</strong>
-        <span>SemEval 2027</span>
+        <span class="brand-name"><b>MM</b>CultureQA</span>
+        <span class="brand-sub">SemEval 2027 · Task</span>
       </span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
-      {% for item in site.data.navigation %}
-        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
-      {% endfor %}
-    </nav>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+    </button>
+
+    <div class="nav-wrap" id="primary-nav">
+      <nav class="site-nav" aria-label="Primary">
+        {% for item in site.data.navigation %}
+          <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      <span class="nav-cta">
+        <a class="btn btn--primary" href="{{ '/participate/' | relative_url }}">Participate</a>
+      </span>
+    </div>
   </div>
 </header>

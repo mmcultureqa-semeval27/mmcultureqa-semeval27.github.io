@@ -1,0 +1,99 @@
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.org-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: var(--navy-800);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.org-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-line);
+}
+
+.org-thumb {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.org-thumb img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--navy-750);
+  box-shadow: 0 0 0 1px var(--line-2);
+}
+
+.org-info {
+  min-width: 0;
+}
+
+.org-name {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0 0 4px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.org-name a {
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.org-name a:hover {
+  color: var(--gold);
+}
+
+.org-name a svg {
+  width: 13px;
+  height: 13px;
+  opacity: 0;
+  color: var(--gold);
+  transition: opacity 0.18s var(--ease);
+}
+
+.org-card:hover .org-name a svg {
+  opacity: 1;
+}
+
+.org-affil {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 920px) {
+  .org-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .org-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .org-thumb,
+  .org-thumb img {
+    flex-basis: 72px;
+    width: 72px;
+    height: 72px;
+  }
+}

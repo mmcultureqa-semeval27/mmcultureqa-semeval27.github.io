@@ -6,18 +6,24 @@ layout: default
 <section class="page-title">
   <div class="container">
     {% if page.kicker %}
-      <p class="eyebrow">{{ page.kicker }}</p>
+      <span class="eyebrow">{{ page.kicker }}</span>
     {% endif %}
     <h1>{{ page.title }}</h1>
     {% if page.summary %}
-      <p>{{ page.summary }}</p>
+      <p class="summary">{{ page.summary }}</p>
     {% endif %}
   </div>
 </section>
 {% endunless %}
 
+{% if page.plain %}
 <section class="section">
-  <div class="container content">
-    {{ content }}
+  <div class="container">
+    <div class="prose{% if page.wide %} wide{% endif %}">
+      {{ content }}
+    </div>
   </div>
 </section>
+{% else %}
+{{ content }}
+{% endif %}

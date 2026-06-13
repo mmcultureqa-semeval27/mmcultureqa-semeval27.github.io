@@ -1,0 +1,5 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MMCultureQA">
+  <circle cx="24" cy="24" r="24" fill="#1a1e40"/>
+  <path d="M23 11h13a5 5 0 0 1 5 5v7a5 5 0 0 1-5 5" fill="none" stroke="#e6ca8e" stroke-width="2.6" stroke-linecap="round"/>
+  <path fill="#e6ca8e" d="M12 15h17a5.5 5.5 0 0 1 5.5 5.5v7A5.5 5.5 0 0 1 29 33H18l-6.5 5.6 1-5.6H12a5.5 5.5 0 0 1-5.5-5.5v-7A5.5 5.5 0 0 1 12 15Z"/>
+</svg>

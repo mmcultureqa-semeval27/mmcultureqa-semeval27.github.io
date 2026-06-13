@@ -1,0 +1,46 @@
+- q: "Who can participate?"
+  a: >
+    Anyone. Participation is open and free to individuals and teams from academia and
+    industry worldwide. You register on the submission platform and accept the dataset
+    usage terms.
+
+- q: "Do I have to enter every track and language?"
+  a: >
+    No. You may participate in any subset: a single track, a single language variety,
+    or all of them. Systems are ranked per track and per language.
+
+- q: "How are submissions evaluated and ranked?"
+  a: >
+    Systems generate open-ended answers. The planned official ranking metric is the F1
+    variant of <strong>BERTScore</strong>, which rewards semantically equivalent answers
+    with different surface forms. BLEU and ROUGE are reported as auxiliary lexical-overlap
+    metrics. LLM-based evaluation may be reported as supplementary analysis but is not the
+    official ranking metric.
+
+- q: "Can I use external data and pretrained models?"
+  a: >
+    Detailed rules will ship with the starter kit. In line with typical SemEval practice,
+    pretrained models and external resources are generally allowed provided they are
+    publicly documented and you describe them in your system paper. Any restrictions will
+    be stated clearly at data release.
+
+- q: "How do I submit my predictions?"
+  a: >
+    Submissions are planned through <strong>CodaBench</strong>. The competition link,
+    submission format, and the official evaluation script will be posted on the
+    Participate page when the evaluation phase opens.
+
+- q: "Is there a paper to write?"
+  a: >
+    Yes. Participants are encouraged to submit a system description paper, which will be
+    published in the SemEval 2027 proceedings and presented at the workshop.
+
+- q: "What does it cost, and how is the data licensed?"
+  a: >
+    Participation is free. The shared-task dataset is planned for release under the
+    <strong>CC BY-NC-SA 4.0</strong> license for non-commercial research use.
+
+- q: "How do I stay updated?"
+  a: >
+    Join the mailing list (link coming soon) and watch the Home page news feed. All
+    announcements, including data, baselines, and submission details, appear there first.

@@ -4,25 +4,22 @@
   {% assign organizers = site.data.organizers.main %}
 {% endif %}
 
-<div class="organizer-grid">
+<div class="org-grid">
   {% for organizer in organizers %}
-    <article class="organizer-card">
-      <div class="organizer-thumb">
-        <img src="{{ organizer.thumb | relative_url }}" alt="{{ organizer.name }}">
+    <article class="org-card">
+      <div class="org-thumb">
+        <img src="{{ organizer.thumb | relative_url }}" alt="{{ organizer.name }}" loading="lazy">
       </div>
-      <div>
-        <h2>
+      <div class="org-info">
+        <p class="org-name">
           {% if organizer.link %}
-            <a href="{{ organizer.link }}">{{ organizer.name }}</a>
+            <a href="{{ organizer.link }}" rel="noopener" target="_blank">{{ organizer.name }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
           {% else %}
             {{ organizer.name }}
           {% endif %}
-        </h2>
+        </p>
         {% if organizer.affiliation %}
-          <p class="organizer-affiliation">{{ organizer.affiliation }}</p>
-        {% endif %}
-        {% if organizer.profile %}
-          <p class="organizer-profile">{{ organizer.profile }}</p>
+          <p class="org-affil">{{ organizer.affiliation }}</p>
         {% endif %}
       </div>
     </article>

@@ -1,12 +1,36 @@
-<section class="hero" style="background-image: linear-gradient(90deg, rgba(12, 28, 32, 0.88), rgba(12, 28, 32, 0.62)), url('{{ "/assets/images/oasis_sample.png" | relative_url }}');">
+<section class="hero">
   <div class="container hero-inner">
-    <p class="eyebrow">SemEval 2027 Shared Task</p>
-    <h1>MMCultureQA: Multilingual and Multimodal Culturally Grounded Question Answering</h1>
-    <p class="hero-copy">
-      A shared task on open-ended answer generation from images paired with spoken or textual questions in English, Modern Standard Arabic, Egyptian Arabic, and Levantine Arabic.
-    </p>
-    <div class="hero-actions">
-      <a class="button primary" href="{{ '/tasks/' | relative_url }}">View Tasks</a>
+    <div class="hero-text reveal">
+      <span class="hero-eyebrow"><span class="tick"></span> SemEval 2027 Shared Task</span>
+      <h1>Culturally grounded <span class="hl">visual question answering</span><span class="dot">.</span></h1>
+      <p class="hero-copy">
+        Build systems that answer open-ended questions about images, asked by voice or in writing,
+        across English and three Arabic varieties, grounded in real-world MENA culture.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="{{ '/participate/' | relative_url }}">
+          Join the task
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="{{ '/tasks/' | relative_url }}">Read the task</a>
+      </div>
+      <div class="hero-meta">
+        <span class="item"><span class="num">2</span><span class="lbl">Tracks</span></span>
+        <span class="item"><span class="num">4</span><span class="lbl">Language varieties</span></span>
+        <span class="item"><span class="num">2</span><span class="lbl">Modalities</span></span>
+        <span class="item"><span class="num">18</span><span class="lbl">MENA countries</span></span>
+      </div>
     </div>
+
+    <figure class="hero-figure reveal">
+      <div class="hero-card">
+        <img src="{{ '/assets/images/oasis_sample.png' | relative_url }}" alt="An example: an image with a spoken and a textual question, and the expected open-ended answer.">
+        <figcaption>
+          <span class="pill">Image + question</span>
+          <span class="arrow" style="color:var(--gold);font-weight:700">&rarr;</span>
+          <span class="pill">open-ended answer</span>
+        </figcaption>
+      </div>
+    </figure>
   </div>
 </section>

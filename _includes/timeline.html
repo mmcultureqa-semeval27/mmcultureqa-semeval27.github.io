@@ -1,0 +1,30 @@
+{% comment %} Auto-status timeline. Params: eyebrow, title, lede, section_class, id {% endcomment %}
+{% assign now = site.time | date: "%s" | plus: 0 %}
+{% assign next_found = false %}
+<section class="section {{ include.section_class }}"{% if include.id %} id="{{ include.id }}"{% endif %}>
+  <div class="container">
+    <div class="section-head reveal">
+      {% if include.eyebrow %}<span class="eyebrow">{{ include.eyebrow }}</span>{% endif %}
+      <h2>{{ include.title | default: "Important dates" }}</h2>
+      {% if include.lede %}<p class="lede">{{ include.lede }}</p>{% else %}<p class="lede">All dates are tentative and will be confirmed with the data release.</p>{% endif %}
+    </div>
+    <ol class="timeline reveal">
+      {% for item in site.data.deadlines %}
+        {% assign t = item.iso | date: "%s" | plus: 0 %}
+        {% if t < now %}
+          {% assign state = "is-done" %}{% assign badge = "Done" %}
+        {% elsif next_found == false %}
+          {% assign state = "is-now" %}{% assign badge = "Next up" %}{% assign next_found = true %}
+        {% else %}
+          {% assign state = "" %}{% assign badge = "" %}
+        {% endif %}
+        <li class="tl-item {{ state }}">
+          <span class="tl-dot"></span>
+          <span class="tl-date">{{ item.date }}</span>
+          <span class="tl-label">{{ item.label }}{% if badge != "" %}<span class="tl-status">{{ badge }}</span>{% endif %}</span>
+          {% if item.note %}<span class="tl-note">{{ item.note }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
