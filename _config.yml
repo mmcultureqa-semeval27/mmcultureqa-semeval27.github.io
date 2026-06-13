@@ -1,0 +1,24 @@
+title: "MMCultureQA SemEval 2027"
+tagline: "Multilingual and Multimodal Culturally Grounded Question Answering"
+description: "SemEval 2027 shared task on culturally grounded spoken and visual question answering in English and Arabic varieties."
+url: "https://mmcultureqa-semeval27.github.io"
+baseurl: ""
+permalink: pretty
+
+logo_text: "MMCultureQA"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

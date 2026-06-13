@@ -1,0 +1,6 @@
+- name: "Home"
+  url: "/"
+- name: "Tasks"
+  url: "/tasks/"
+- name: "Organizers"
+  url: "/organizers/"

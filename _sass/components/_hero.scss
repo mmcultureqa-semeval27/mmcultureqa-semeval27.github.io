@@ -1,0 +1,52 @@
+.hero {
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.hero-inner {
+  max-width: 980px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.hero .eyebrow,
+.hero h1,
+.hero p {
+  color: #ffffff;
+}
+
+.hero h1 {
+  max-width: 900px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.hero-copy {
+  max-width: 760px;
+  font-size: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-copy {
+    font-size: 18px;
+  }
+}

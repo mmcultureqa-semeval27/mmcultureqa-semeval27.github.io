@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-ink);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+th {
+  color: var(--color-ink);
+  background: var(--color-soft);
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-muted {
+  background: var(--color-soft);
+}
+
+.section-accent {
+  background: linear-gradient(180deg, #fbfcfc 0%, #edf5f2 100%);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.button.primary {
+  color: #ffffff;
+  background: var(--color-primary);
+}
+
+.button.secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.72);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.page-title {
+  padding: 70px 0 42px;
+  background: var(--color-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-title .container {
+  max-width: 900px;
+}
+
+.page-title p:last-child {
+  max-width: 760px;
+  color: var(--color-muted);
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}

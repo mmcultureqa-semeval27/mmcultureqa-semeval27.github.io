@@ -1,0 +1,13 @@
+<section class="section section-muted">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">News</p>
+      <h2>Recent Updates</h2>
+    </div>
+    <ul class="updates-list">
+      {% for update in site.data.updates %}
+        <li><time>{{ update.date }}</time>: <strong>{{ update.title }}</strong>{% if update.text %} - {{ update.text }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

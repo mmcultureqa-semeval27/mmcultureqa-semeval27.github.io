@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <span class="brand-mark">MCQ</span>
+      <span class="brand-text">
+        <strong>{{ site.logo_text }}</strong>
+        <span>SemEval 2027</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

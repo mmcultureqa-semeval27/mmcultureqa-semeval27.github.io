@@ -1,0 +1,30 @@
+{% if include.group == "other" %}
+  {% assign organizers = site.data.organizers.other %}
+{% else %}
+  {% assign organizers = site.data.organizers.main %}
+{% endif %}
+
+<div class="organizer-grid">
+  {% for organizer in organizers %}
+    <article class="organizer-card">
+      <div class="organizer-thumb">
+        <img src="{{ organizer.thumb | relative_url }}" alt="{{ organizer.name }}">
+      </div>
+      <div>
+        <h2>
+          {% if organizer.link %}
+            <a href="{{ organizer.link }}">{{ organizer.name }}</a>
+          {% else %}
+            {{ organizer.name }}
+          {% endif %}
+        </h2>
+        {% if organizer.affiliation %}
+          <p class="organizer-affiliation">{{ organizer.affiliation }}</p>
+        {% endif %}
+        {% if organizer.profile %}
+          <p class="organizer-profile">{{ organizer.profile }}</p>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
