@@ -24,7 +24,7 @@ description: "Tracks, example walkthrough, languages, and evaluation for the MMC
           matches the reference meaning.
         </p>
         <div class="pill-row">
-          <span class="pill pill--gold">Open-ended generation</span>
+          <span class="pill pill--blue">Open-ended generation</span>
           <span class="pill">Visual grounding</span>
           <span class="pill">Cultural sensitivity</span>
         </div>

@@ -1,49 +1,43 @@
 :root {
-  /* Base — deep blue-indigo (midnight), lifted a touch lighter */
-  --navy-950: #13162f;
-  --navy-900: #1a1e40; /* page background */
-  --navy-850: #1f2449;
-  --navy-800: #262d57; /* raised panels / cards */
-  --navy-750: #2e3668; /* hover / elevated */
-  --navy-700: #39427d;
+  /* Brand — blue primary, red secondary, on white */
+  --blue-700: #0a52c4; /* dark blue: headings accents, hover */
+  --blue-600: #1366d6; /* primary */
+  --blue-500: #2f7ef0;
+  --blue-100: #e8f1ff; /* soft blue tint */
+  --blue-050: #f3f8ff;
 
-  /* Hairlines on dark */
-  --line: rgba(167, 182, 255, 0.12);
-  --line-2: rgba(167, 182, 255, 0.2);
+  --red-600: #d83a47; /* secondary accent, sparing */
+  --red-500: #e1505c;
+  --red-100: #fdecee;
 
-  /* Brass / gold accent */
-  --gold: #e6ca8e;
-  --gold-2: #d8b063;
-  --gold-deep: #c79a4e;
-  --gold-soft: rgba(230, 202, 142, 0.12);
-  --gold-line: rgba(230, 202, 142, 0.3);
+  /* Neutrals */
+  --ink: #16202e; /* headings */
+  --text: #3b4658; /* body */
+  --muted: #6b7689; /* secondary text */
+  --faint: #9aa3b2;
+  --border: #e5e9f0;
+  --border-2: #d4dae4;
 
-  /* Cool periwinkle — secondary highlight, used sparingly */
-  --sky: #9db0ff;
-  --sky-soft: rgba(157, 176, 255, 0.12);
-
-  /* Type colors */
-  --white: #f4f5fd;
-  --text: #d7dbf2;
-  --muted: #a3a9cf;
-  --faint: #767ca6;
+  --surface: #ffffff;
+  --soft: #f5f8fc; /* light section background */
+  --soft-2: #eef3fa;
 
   /* Effects */
-  --shadow-md: 0 18px 40px rgba(5, 7, 24, 0.45);
-  --shadow-lg: 0 34px 80px rgba(5, 7, 24, 0.6);
+  --shadow-sm: 0 1px 2px rgba(20, 35, 60, 0.05), 0 2px 6px rgba(20, 35, 60, 0.05);
+  --shadow-md: 0 8px 24px rgba(20, 35, 60, 0.08);
+  --shadow-lg: 0 24px 60px rgba(20, 35, 60, 0.14);
 
-  --radius-sm: 12px;
-  --radius: 16px;
-  --radius-lg: 22px;
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-lg: 20px;
   --radius-pill: 999px;
 
-  --container: 1140px;
+  --container: 1120px;
   --container-narrow: 800px;
 
-  --font-display: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
+  --font-display: var(--font-body);
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }

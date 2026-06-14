@@ -5,15 +5,16 @@
 }
 
 .faq-item {
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--navy-800);
+  background: #fff;
   overflow: hidden;
-  transition: border-color 0.2s var(--ease);
+  transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
 }
 
 .faq-item[open] {
-  border-color: var(--gold-line);
+  border-color: var(--border-2);
+  box-shadow: var(--shadow-sm);
 }
 
 .faq-item summary {
@@ -21,12 +22,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 20px 24px;
+  padding: 18px 22px;
   cursor: pointer;
   list-style: none;
   font-weight: 600;
-  font-size: 1.06rem;
-  color: var(--white);
+  font-size: 1.04rem;
+  color: var(--ink);
 }
 
 .faq-item summary::-webkit-details-marker {
@@ -38,8 +39,8 @@
   flex: 0 0 auto;
   width: 10px;
   height: 10px;
-  border-right: 2px solid var(--gold);
-  border-bottom: 2px solid var(--gold);
+  border-right: 2px solid var(--blue-600);
+  border-bottom: 2px solid var(--blue-600);
   transform: rotate(45deg);
   transition: transform 0.22s var(--ease);
 }
@@ -49,11 +50,11 @@
 }
 
 .faq-item summary:hover {
-  color: var(--gold);
+  color: var(--blue-700);
 }
 
 .faq-answer {
-  padding: 0 24px 22px;
+  padding: 0 22px 20px;
   color: var(--muted);
 }
 

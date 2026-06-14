@@ -65,12 +65,12 @@ description: "How to participate in MMCultureQA SemEval 2027: registration, data
     <div class="grid cols-3">
       <article class="card lift reveal">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6M12 19h8"/></svg></div>
-        <h3>Submission platform <span class="pill pill--gold">Soon</span></h3>
+        <h3>Submission platform <span class="pill pill--red">Soon</span></h3>
         <p>Submissions are planned through <strong>CodaBench</strong>. The competition link and submission format will be posted here.</p>
       </article>
       <article class="card lift reveal">
         <div class="card-icon sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></svg></div>
-        <h3>Starter kit &amp; baselines <span class="pill pill--gold">Soon</span></h3>
+        <h3>Starter kit &amp; baselines <span class="pill pill--red">Soon</span></h3>
         <p>A starter kit with data loaders, baseline systems, and the official evaluation script will be released with the data.</p>
       </article>
       <article class="card lift reveal">

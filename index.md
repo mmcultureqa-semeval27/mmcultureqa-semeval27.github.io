@@ -11,7 +11,7 @@ description: "A SemEval 2027 shared task on multilingual, multimodal, culturally
     <div class="split">
       <div class="reveal">
         <span class="eyebrow">The challenge</span>
-        <h2>Three signals, one task<span class="dot">.</span></h2>
+        <h2>Three signals, one task</h2>
         <p>
           <strong>MMCultureQA</strong> is about culturally grounded spoken and visual question
           answering. Every instance pairs an image with a question, asked by voice or in writing,
