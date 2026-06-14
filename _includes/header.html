@@ -1,26 +1,23 @@
-<header class="site-header" id="site-header">
+<header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-      <img class="brand-mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="42" height="42">
-      <span class="brand-text">
-        <span class="brand-name"><b>MM</b>CultureQA</span>
-        <span class="brand-sub">SemEval 2027</span>
-      </span>
-    </a>
+    <div class="site-info">
+      <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="44" height="44">
+      </a>
+      <div class="site-desc">
+        <a class="site-name" href="{{ '/' | relative_url }}"><b>MM</b>CultureQA 2027</a>
+        <p class="site-tagline">{{ site.tagline }}</p>
+      </div>
+    </div>
 
-    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-      <span></span>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
 
-    <div class="nav-wrap" id="primary-nav">
-      <nav class="site-nav" aria-label="Primary">
-        {% for item in site.data.navigation %}
-          <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-      </nav>
-      <span class="nav-cta">
-        <a class="btn btn--primary" href="{{ '/participate/' | relative_url }}">Participate</a>
-      </span>
-    </div>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+    </nav>
   </div>
 </header>

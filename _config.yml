@@ -1,11 +1,13 @@
-title: "MMCultureQA SemEval 2027"
-tagline: "Multilingual and Multimodal Culturally Grounded Question Answering"
-description: "SemEval 2027 shared task on culturally grounded spoken and visual question answering in English and Arabic varieties."
+title: "MMCultureQA 2027"
+tagline: "Multilingual Multimodal Cultural Question Answering"
+description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
 url: "https://mmcultureqa-semeval27.github.io"
 baseurl: ""
 permalink: pretty
 
-logo_text: "MMCultureQA"
+# Shared links (edit in one place)
+registration_url: "https://docs.google.com/forms/d/15-Vbs82rBF6TCwxT4aAiJDWiiDqPI6uaggz95qStSkQ/viewform"
+dataset_url: "https://huggingface.co/datasets/QCRI/MMCQA-SemEval27"
 
 sass:
   sass_dir: _sass
@@ -15,7 +17,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: page
+      layout: default
 
 exclude:
   - Gemfile

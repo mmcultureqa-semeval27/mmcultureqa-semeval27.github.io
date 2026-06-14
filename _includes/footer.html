@@ -1,50 +1,7 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <img class="brand-mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="44" height="44">
-          <span class="brand-text">
-            <span class="brand-name"><b>MM</b>CultureQA</span>
-            <span class="brand-sub">SemEval 2027</span>
-          </span>
-        </a>
-        <p class="footer-tagline">{{ site.tagline }}.</p>
-        <p class="footer-tagline">A SemEval 2027 shared task on multilingual, multimodal, culturally grounded question answering.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          {% for item in site.data.navigation %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="{{ '/tasks/#evaluation' | relative_url }}">Evaluation</a></li>
-          <li><a href="{{ '/data/' | relative_url }}">Dataset (OASIS)</a></li>
-          <li><a href="{{ '/participate/' | relative_url }}">Submission <span class="footer-tag">CodaBench</span></a></li>
-          <li><a href="{{ '/participate/#faq' | relative_url }}">FAQ</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="{{ '/participate/#contact' | relative_url }}">Mailing list</a></li>
-          <li><a href="{{ '/organizers/' | relative_url }}">Organizers</a></li>
-          <li><a href="https://semeval.github.io/" rel="noopener" target="_blank">SemEval</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© {{ site.time | date: "%Y" }} MMCultureQA. Dataset under CC&nbsp;BY-NC-SA&nbsp;4.0.</span>
-      <span>SemEval 2027 · Co-located with a major NLP conference</span>
-    </div>
+    <p class="f-name">MMCultureQA 2027</p>
+    <p>A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on multilingual multimodal cultural question answering.</p>
+    <p>© {{ site.time | date: "%Y" }} MMCultureQA. Data under CC&nbsp;BY-NC-SA&nbsp;4.0.</p>
   </div>
 </footer>

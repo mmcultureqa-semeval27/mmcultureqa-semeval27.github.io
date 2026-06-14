@@ -4,9 +4,27 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.html %}
-    <main id="main-content">
-      {{ content }}
-    </main>
+
+    <div class="sec section-padding">
+      <div class="container doc">
+        <aside class="doc-toc">
+          <div class="toc-wrap">
+            <p class="toc-title">On this page</p>
+            <nav class="toc-list" aria-label="On this page"></nav>
+          </div>
+        </aside>
+        <main id="main-content" class="doc-main layout-content">
+          <div class="content">
+            {{ content }}
+          </div>
+        </main>
+      </div>
+    </div>
+
     {% include footer.html %}
+
+    <a href="#" id="back-to-top" aria-label="Back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
   </body>
 </html>

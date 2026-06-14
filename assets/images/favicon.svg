@@ -1,5 +1,14 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MMCultureQA">
   <rect x="0" y="0" width="48" height="48" rx="11" fill="#ffffff"/>
-  <path d="M24 11h12a5 5 0 0 1 5 5v7a5 5 0 0 1-5 5" fill="none" stroke="#d83a47" stroke-width="2.6" stroke-linecap="round"/>
-  <path fill="#1366d6" d="M11 14h17a5.5 5.5 0 0 1 5.5 5.5v7A5.5 5.5 0 0 1 28 32H18l-6.5 5.6 1-5.6H11a5.5 5.5 0 0 1-5.5-5.5v-7A5.5 5.5 0 0 1 11 14Z"/>
+  <path d="M24 10h12a5 5 0 0 1 5 5v7a5 5 0 0 1-5 5" fill="none" stroke="#c0303a" stroke-width="2.6" stroke-linecap="round"/>
+  <path fill="#1f6fb2" d="M9 13h20a5.5 5.5 0 0 1 5.5 5.5v8A5.5 5.5 0 0 1 29 32H18l-7 6 1.1-6H9a5.5 5.5 0 0 1-5.5-5.5v-8A5.5 5.5 0 0 1 9 13Z"/>
+  <!-- dallah knocked out in white -->
+  <g fill="#ffffff">
+    <circle cx="20.5" cy="16.4" r="1.05"/>
+    <path d="M17.8 20.4 Q18.2 17.3 20.5 17.3 Q22.8 17.3 23.2 20.4 Z"/>
+    <path d="M17.5 20.7 L23.5 20.7 Q25.4 25 23.9 28.9 Q20.5 30.7 17.1 28.9 Q15.6 25 17.5 20.7 Z"/>
+    <path d="M17.7 21.4 C14.1 20.4 12.5 18 12.7 14.8 C14.1 17.2 15.9 19 18.5 20.6 Z"/>
+    <path d="M17 29.1 L24 29.1 L22.9 30.9 L18.1 30.9 Z"/>
+  </g>
+  <path d="M23.9 21.8 C27 22.6 27 27 23.9 27.8" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
 </svg>

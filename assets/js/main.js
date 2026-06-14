@@ -2,67 +2,75 @@
   "use strict";
 
   /* ---------- Mobile navigation ---------- */
-  var header = document.getElementById("site-header");
-  var toggle = header && header.querySelector(".nav-toggle");
+  var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("primary-nav");
-
-  if (header && toggle && nav) {
-    var setOpen = function (open) {
-      header.classList.toggle("nav-open", open);
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    };
-
+  if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      setOpen(!header.classList.contains("nav-open"));
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
-
-    // Close when a nav link is tapped
     nav.addEventListener("click", function (e) {
-      if (e.target.closest("a")) setOpen(false);
-    });
-
-    // Close on Escape
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") setOpen(false);
-    });
-
-    // Reset when resizing back to desktop
-    window.addEventListener("resize", function () {
-      if (window.innerWidth > 880) setOpen(false);
+      if (e.target.closest("a")) {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
     });
   }
 
-  /* ---------- Sticky header shadow on scroll ---------- */
-  if (header) {
-    var onScroll = function () {
-      header.classList.toggle("is-scrolled", window.scrollY > 8);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-  }
+  /* ---------- Build table of contents from h2 headings ---------- */
+  var content = document.querySelector(".doc-main .content");
+  var tocList = document.querySelector(".toc-list");
+  var aside = document.querySelector(".doc-toc");
 
-  /* ---------- Reveal on scroll ---------- */
-  var reveals = document.querySelectorAll(".reveal");
-  if (reveals.length) {
-    if ("IntersectionObserver" in window) {
-      var io = new IntersectionObserver(
-        function (entries) {
+  if (content && tocList) {
+    var heads = [].slice.call(content.querySelectorAll("h2"));
+
+    if (heads.length < 2) {
+      if (aside) aside.style.display = "none";
+    } else {
+      var ol = document.createElement("ol");
+      heads.forEach(function (h) {
+        if (!h.id) {
+          h.id = h.textContent.trim().toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+        }
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "#" + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        ol.appendChild(li);
+      });
+      tocList.appendChild(ol);
+
+      /* Scrollspy: highlight the current section */
+      var links = {};
+      [].slice.call(tocList.querySelectorAll("a")).forEach(function (a) {
+        links[a.getAttribute("href").slice(1)] = a;
+      });
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
             if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              io.unobserve(entry.target);
+              Object.keys(links).forEach(function (id) { links[id].classList.remove("active"); });
+              if (links[entry.target.id]) links[entry.target.id].classList.add("active");
             }
           });
-        },
-        { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
-      );
-      reveals.forEach(function (el) {
-        io.observe(el);
-      });
-    } else {
-      reveals.forEach(function (el) {
-        el.classList.add("is-visible");
-      });
+        }, { rootMargin: "0px 0px -78% 0px" });
+        heads.forEach(function (h) { io.observe(h); });
+      }
     }
+  }
+
+  /* ---------- Back to top ---------- */
+  var btt = document.getElementById("back-to-top");
+  if (btt) {
+    window.addEventListener("scroll", function () {
+      btt.classList.toggle("show", window.scrollY > 400);
+    }, { passive: true });
+    btt.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 })();
