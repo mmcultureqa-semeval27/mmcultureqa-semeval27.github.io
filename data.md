@@ -28,15 +28,14 @@ computational resources. Final release counts will be confirmed at the data rele
 
 | Property | Coverage |
 | --- | --- |
-| Language varieties | English, Modern Standard, Egyptian, and Levantine Arabic |
+| Language varieties | English, Modern Standard, Egyptian, Levantine Arabic and more (TBA)|
 | Countries | 18 across the MENA region |
 | Modalities | Each question is available as both audio and text |
 | Content | 9 categories and 31 sub-categories |
 
 ## A Single Instance
 
-Exact file formats and field names will be documented in the starter kit at release. Each
-instance includes:
+Exact file formats and field names will be documented in the starter kit at release. Each instance includes:
 
 - **Image:** the image the question refers to.
 - **Spoken question (Track 1):** an audio clip in the instance's language variety.
@@ -55,20 +54,8 @@ full training and development data following on 1 September 2026.
 
 ## Citation
 
-If you use OASIS or take part in MMCultureQA, please cite the OASIS paper:
-
-{% raw %}
-```bibtex
-@article{alam2025everydaymmqa,
-  title   = {{OASIS}: A Multilingual and Multimodal Dataset for Culturally Grounded Spoken Visual QA},
-  author  = {Alam, Firoj and Shahroor, Ali Ezzat and Hasan, Md. Arid and Ali, Zien Sheikh and Bhatti, Hunzalah Hassan and Kmainasi, Mohamed Bayan and Chowdhury, Shammur Absar and Mousi, Basel and Dalvi, Fahim and Durrani, Nadir and Milic-Frayling, Natasa},
-  journal = {arXiv preprint arXiv:2510.06371},
-  year    = {2025},
-}
-```
-{% endraw %}
+TBA
 
 ## License
 
-The shared-task dataset is planned for release under the **CC BY-NC-SA 4.0** license, for
-non-commercial research use with attribution and share-alike.
+The shared-task dataset is planned for release under the **CC BY-NC-SA 4.0** license, for non-commercial research use with attribution and share-alike.

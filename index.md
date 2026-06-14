@@ -5,27 +5,19 @@ description: "SemEval 2027 shared task on multilingual multimodal cultural quest
 
 # Welcome to MMCultureQA 2027
 
-MMCultureQA is a [SemEval 2027](https://semeval.github.io/SemEval2027/) shared task on
-visual question answering in Arabic and English. A system is given an image and a question
-about it, and has to write a short, open-ended answer. The question can be spoken or typed,
-and it comes in English or one of three Arabic varieties: Modern Standard, Egyptian, and
-Levantine.
+MMCultureQA is a [SemEval 2027](https://semeval.github.io/SemEval2027/) shared task on visual question answering in multiple languages. A system is given an image and a question about it, and has to write a short, open-ended answer. The question can be spoken or typed, and it comes in multiple languages.
 
-What makes the task hard is cultural grounding. Many questions are about the food, places,
-customs, and objects of the MENA region, so the right answer often depends on local
-knowledge rather than on what is plainly visible in the image. All of the data comes from
-OASIS, a large multimodal dataset collected across the Arabic-speaking world.
+
+What makes the task hard is cultural grounding. Many questions are about the food, places, customs, and objects, so the right answer often depends on local knowledge rather than on what is plainly visible in the image.
 
 ## Tasks
 
-The shared task has two tracks, offered in all four language varieties. You may enter
-either track or both.
+The shared task has two tracks, offered in all four language varieties. You may enter either track or both.
 
 - **Track 1: Spoken Visual QA** generates an answer to a spoken (audio) question about an image.
 - **Track 2: Textual Visual QA** answers the same question presented as text.
 
-See the [Task](/tasks/) page for the full definition and the [Data](/data/) page for the
-OASIS dataset.
+See the [Task](/tasks/) page for the full definition and the [Data](/data/) page for the dataset.
 
 ## Important Dates
 
@@ -49,6 +41,4 @@ All dates are tentative and will be confirmed at the data release.
 ## Contact
 
 Registration is open: [sign up using the registration form]({{ site.registration_url }}).
-For full details on taking part, see the [Participate](/participate/) page. A participant
-mailing list is being set up and will be linked here, and for other questions you can
-contact the [organizers](/organizers/).
+For full details on taking part, see the [Participate](/participate/) page. A participant mailing list is being set up and will be linked here, and for other questions you can contact the [organizers](/organizers/).

@@ -5,9 +5,6 @@ description: "The team organizing the MMCultureQA SemEval 2027 shared task."
 
 # Organizers
 
-MMCultureQA is organized by researchers at the Qatar Computing Research Institute (HBKU),
-the University of Toronto, MEF University, and Macquarie University.
-
 <ul class="org-grid">
   {% for person in site.data.organizers.main %}
   <li>
