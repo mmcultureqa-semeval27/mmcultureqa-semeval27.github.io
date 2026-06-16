@@ -2,6 +2,7 @@
   date: "15 July 2026"
   iso: "2026-07-15"
   note: "A small sample set to preview format and build a pipeline."
+  released: true
 - label: "Training data release"
   date: "1 September 2026"
   iso: "2026-09-01"

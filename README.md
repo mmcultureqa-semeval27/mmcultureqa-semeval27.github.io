@@ -19,22 +19,19 @@ Most content is data-driven. Edit the YAML files in `_data/`, no templating need
 | File | Drives |
 | --- | --- |
 | `_data/navigation.yml` | Header / footer nav links |
-| `_data/stats.yml` | "By the numbers" strip (OASIS scale) |
-| `_data/tracks.yml` | Track cards |
-| `_data/languages.yml` | Language / dialect cards |
 | `_data/deadlines.yml` | Timeline (status auto-computed from `iso` dates) |
 | `_data/updates.yml` | News feed |
 | `_data/faq.yml` | FAQ accordion |
 | `_data/organizers.yml` | Organizer grid |
 
-Pages live at the repo root (`index.md`, `tasks.md`, `data.md`, `participate.md`,
-`organizers.md`). Reusable section blocks are in `_includes/`; styles are in `_sass/`.
+Pages live at the repo root (`index.md`, `tasks.md`, `oasis.md`, `participate.md`,
+`organizers.md`). Styles are in `_sass/`.
 
 ## Structure
 
-- `_layouts/`: `default.html` (shell) and `page.html` (interior pages with title band)
-- `_includes/`: `hero`, `stats`, `tracks`, `languages`, `timeline`, `news`, `cta`, `faq`, header/footer
-- `_sass/`: design system (`_variables`, `_base`, `components/*`)
+- `_layouts/`: `default.html` (page shell)
+- `_includes/`: `head.html`, `header.html`, `footer.html`
+- `_sass/`: design system (`_variables.scss`, `_base.scss`)
 - `assets/`: `css/style.scss`, `js/main.js`, images, and the SVG logo / favicon
 
 The planned GitHub Pages repository is:

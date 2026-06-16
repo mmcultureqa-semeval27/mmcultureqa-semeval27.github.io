@@ -1,50 +1,48 @@
 ---
-title: "Task"
-description: "Task definition, input and output format, tracks, languages, and evaluation for the MMCultureQA SemEval 2027 shared task."
+title: "Tasks"
+description: "Task definitions, language tracks, and evaluation for the MMCultureQA SemEval 2027 shared task."
 ---
 
-# Task
+# Tasks
 
 <p class="lead-box">Given an image and a question about its content, a system generates an
 open-ended answer that is grounded in the image and appropriate to the language and culture
 of the question.</p>
 
+<p class="buttons">
+  <a class="btn" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Get the data</a>
+  <a class="btn secondary" href="/participate/">Participate</a>
+</p>
+
 ## Overview
 
 Answers are free text rather than multiple choice, so they must be semantically
 appropriate, grounded in the visual content, and sensitive to the relevant linguistic and
-cultural context. The question is presented either as speech or as text, in one of four
-language varieties. Systems are scored on how closely their answer matches the reference
+cultural context. The question is presented either as speech or as text, across English and
+Arabic varieties. Systems are scored on how closely their answer matches the reference
 meaning.
 
-## Tracks
+## The two tasks
 
-The shared task has two tracks. Both take an image and a question and produce an open-ended
-answer; they differ only in how the question is provided. You may enter either track or
-both, in any of the four language varieties.
+The shared task has two tasks. Both take an image and a question and produce an open-ended
+answer; they differ only in how the question is provided. You may enter either task or both.
 
-| Track | Input | Output |
+| Task | Input | Output |
 | --- | --- | --- |
-| Track 1: Spoken Visual QA | Image and spoken question (audio) | Open-ended answer (text) |
-| Track 2: Textual Visual QA | Image and textual question (text) | Open-ended answer (text) |
+| Task 1: Spoken Visual QA | Image and spoken question (audio) | Open-ended answer (text) |
+| Task 2: Textual Visual QA | Image and textual question (text) | Open-ended answer (text) |
 
-**Track 1 (Spoken Visual QA)** tests semantic understanding when the question is presented
+**Task 1 (Spoken Visual QA)** tests semantic understanding when the question is presented
 as speech.
 
-**Track 2 (Textual Visual QA)** uses the same questions as text, which removes the effect of
+**Task 2 (Textual Visual QA)** uses the same questions as text, which removes the effect of
 speech recognition errors.
 
-## Languages
+## Language tracks
 
-Dialectal variation is central to the task. Systems should handle the differences between
-the Arabic varieties as well as English.
-
-| Code | Language |
-| --- | --- |
-| EN | English |
-| MSA | Modern Standard Arabic |
-| EGY | Egyptian Arabic |
-| LEV | Levantine Arabic |
+Each task is offered as a separate track for each language variety, and systems are ranked
+per track. English and Modern Standard Arabic are confirmed; Egyptian Arabic and Levantine
+Arabic are planned, with more to follow.
 
 ## Evaluation
 

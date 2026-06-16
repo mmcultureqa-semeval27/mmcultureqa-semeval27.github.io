@@ -6,7 +6,7 @@ description: "How to participate in MMCultureQA SemEval 2027: registration, data
 # Participate
 
 <p class="lead-box">Participation is open and free to individuals and teams from academia
-and industry. Enter one track or both, in any of the four language varieties.</p>
+and industry. Enter one task or both, in any of the available language tracks.</p>
 
 <p class="buttons">
   <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>
@@ -20,8 +20,8 @@ and industry. Enter one track or both, in any of the four language varieties.</p
 2. **Get the data.** The dataset is hosted on [Hugging Face]({{ site.dataset_url }}). Start
    with the sample set (from 15 July 2026) to preview the format, then download the full
    training and development data (from 1 September 2026).
-3. **Build your system.** Develop a model for Track 1 (spoken), Track 2 (textual), or both,
-   across whichever language varieties you choose.
+3. **Build your system.** Develop a model for Task 1 (spoken), Task 2 (textual), or both,
+   across whichever language tracks you choose.
 4. **Evaluate locally.** Use the official evaluation script to measure BERTScore F1 (plus
    BLEU and ROUGE) before you submit.
 5. **Submit on CodaBench.** During the evaluation phase (10 to 31 January 2027), submit your
@@ -40,7 +40,7 @@ starter kit with data loaders and baseline systems will be released with the dat
 Full rules ship with the starter kit. The essentials:
 
 - **Eligibility:** open and free to everyone, individuals and teams alike.
-- **Tracks and languages:** enter any subset, a single track, a single language, or all of them. Systems are ranked per track and per language.
+- **Tasks and tracks:** enter any subset, a single task, a single language track, or all of them. Systems are ranked per task and per track.
 - **Ranking:** planned official ranking by BERTScore F1.
 - **External resources:** pretrained models and public data are generally permitted; document them in your paper. Any limits will be stated at release.
 - **Data license:** CC BY-NC-SA 4.0, for non-commercial research use.

@@ -12,12 +12,12 @@ What makes the task hard is cultural grounding. Many questions are about the foo
 
 ## Tasks
 
-The shared task has two tracks, offered in all four language varieties. You may enter either track or both.
+The shared task has two tasks, each offered as a separate track per language variety. You may enter either task or both.
 
-- **Track 1: Spoken Visual QA** generates an answer to a spoken (audio) question about an image.
-- **Track 2: Textual Visual QA** answers the same question presented as text.
+- **Task 1: Spoken Visual QA** generates an answer to a spoken (audio) question about an image.
+- **Task 2: Textual Visual QA** answers the same question presented as text.
 
-See the [Task](/tasks/) page for the full definition and the [Data](/data/) page for the dataset.
+See the [Tasks](/tasks/) page for the full definition, and the [OASIS](/oasis/) page for the dataset the shared task is built on.
 
 ## Important Dates
 
@@ -26,7 +26,7 @@ All dates are tentative and will be confirmed at the data release.
 {% assign now = site.time | date: "%s" | plus: 0 %}{% assign next_found = false %}
 <ul class="date-list">
   {% for item in site.data.deadlines %}{% assign t = item.iso | date: "%s" | plus: 0 %}
-  <li><strong>{{ item.date }}:</strong> {{ item.label }}{% if t >= now and next_found == false %} <span class="tag-next">Next</span>{% assign next_found = true %}{% endif %}</li>
+  <li><strong>{{ item.date }}:</strong> {{ item.label }}{% if item.released %} <a class="date-link" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Find here</a>{% endif %}{% if t >= now and next_found == false and item.released != true %} <span class="tag-next">Next</span>{% assign next_found = true %}{% endif %}</li>
   {% endfor %}
 </ul>
 

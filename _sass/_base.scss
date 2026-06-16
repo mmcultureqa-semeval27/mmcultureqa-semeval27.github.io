@@ -109,6 +109,14 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
   font-size: .88em; background: #eef2f6; color: #b03050;
   padding: .12em .4em; border-radius: 4px;
 }
+.content pre {
+  background: #f6f8fa; border: 1px solid var(--line); border-radius: 8px;
+  padding: 14px 16px; margin: 0 0 1.05rem; overflow-x: auto;
+  font-size: .82rem; line-height: 1.5;
+}
+.content pre code {
+  background: none; color: inherit; padding: 0; font-size: inherit; border-radius: 0;
+}
 
 .content figure { margin: 1.5rem 0; }
 .content figure img { border: 1px solid var(--line); border-radius: 8px; display: block; }
@@ -137,6 +145,11 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
 .tag-next {
   display: inline-block; margin-left: .4rem;
   color: var(--accent); font-weight: 700; font-size: .72rem;
+  letter-spacing: .04em; text-transform: uppercase;
+}
+.date-link {
+  display: inline-block; margin-left: .4rem;
+  font-weight: 700; font-size: .72rem;
   letter-spacing: .04em; text-transform: uppercase;
 }
 
