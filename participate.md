@@ -11,6 +11,7 @@ and industry. Enter one task or both, in any of the available language tracks.</
 <p class="buttons">
   <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>
   <a class="btn secondary" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Get the dataset</a>
+  <a class="btn secondary" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
 </p>
 
 ## How to Take Part
@@ -56,6 +57,6 @@ Full rules ship with the starter kit. The essentials:
 
 ## Contact
 
-A participant mailing list is being set up and will be linked here; it will carry every
-announcement about data, baselines, and submission. In the meantime, reach the team on the
+[Join our Slack]({{ site.slack_url }}) for announcements about data, baselines, and
+submission, and to ask questions. You can also reach the team on the
 [organizers](/organizers/) page and watch the [home page](/) for updates.

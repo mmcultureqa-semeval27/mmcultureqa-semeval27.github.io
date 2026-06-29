@@ -8,6 +8,7 @@ permalink: pretty
 # Shared links (edit in one place)
 registration_url: "https://docs.google.com/forms/d/15-Vbs82rBF6TCwxT4aAiJDWiiDqPI6uaggz95qStSkQ/viewform"
 dataset_url: "https://huggingface.co/datasets/QCRI/MMCQA-SemEval27"
+slack_url: "https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA"
 
 sass:
   sass_dir: _sass

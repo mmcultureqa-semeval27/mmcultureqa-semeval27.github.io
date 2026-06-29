@@ -1,22 +1,3 @@
-- q: "Who can participate?"
-  a: >
-    Anyone. Participation is open and free to individuals and teams from academia and
-    industry worldwide. You register on the submission platform and accept the dataset
-    usage terms.
-
-- q: "Do I have to enter every task and track?"
-  a: >
-    No. You may participate in any subset: a single task, a single language track,
-    or all of them. Systems are ranked per task and per track.
-
-- q: "How are submissions evaluated and ranked?"
-  a: >
-    Systems generate open-ended answers. The planned official ranking metric is the F1
-    variant of <strong>BERTScore</strong>, which rewards semantically equivalent answers
-    with different surface forms. BLEU and ROUGE are reported as auxiliary lexical-overlap
-    metrics. LLM-based evaluation may be reported as supplementary analysis but is not the
-    official ranking metric.
-
 - q: "Can I use external data and pretrained models?"
   a: >
     Detailed rules will ship with the starter kit. In line with typical SemEval practice,
@@ -27,8 +8,8 @@
 - q: "How do I submit my predictions?"
   a: >
     Submissions are planned through <strong>CodaBench</strong>. The competition link,
-    submission format, and the official evaluation script will be posted on the
-    Participate page when the evaluation phase opens.
+    submission format, and the official evaluation script will be posted on this page when
+    the evaluation phase opens.
 
 - q: "Is there a paper to write?"
   a: >
@@ -42,5 +23,6 @@
 
 - q: "How do I stay updated?"
   a: >
-    Join the mailing list (link coming soon) and watch the Home page news feed. All
-    announcements, including data, baselines, and submission details, appear there first.
+    Join the <a href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA" rel="noopener" target="_blank">community Slack</a>
+    and watch the Home page news feed. All announcements, including data, baselines, and
+    submission details, appear there first.

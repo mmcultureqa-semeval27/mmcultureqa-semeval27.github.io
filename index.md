@@ -3,21 +3,24 @@ title: "Home"
 description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
 ---
 
-# Welcome to MMCultureQA 2027
+# MMCultureQA 2027
 
-MMCultureQA is a [SemEval 2027](https://semeval.github.io/SemEval2027/) shared task on visual question answering in multiple languages. A system is given an image and a question about it, and has to write a short, open-ended answer. The question can be spoken or typed, and it comes in multiple languages.
+<p class="lead-box">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on culturally grounded visual question answering. A system is given an image and a question about it, and writes a short, open-ended answer. The question can be spoken or typed, in English or Arabic.</p>
 
+<p class="buttons">
+  <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>
+  <a class="btn secondary" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Get the data</a>
+  <a class="btn secondary" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
+</p>
 
-What makes the task hard is cultural grounding. Many questions are about the food, places, customs, and objects, so the right answer often depends on local knowledge rather than on what is plainly visible in the image.
+What makes the task hard is cultural grounding: many questions are about food, places, customs, and objects, so the right answer often depends on local knowledge rather than on what is plainly visible in the image.
 
-## Tasks
+There are two tasks, and you may enter either or both:
 
-The shared task has two tasks, each offered as a separate track per language variety. You may enter either task or both.
+- **Task 1 — Spoken Visual QA:** answer a spoken (audio) question about an image.
+- **Task 2 — Textual Visual QA:** answer the same question presented as text.
 
-- **Task 1: Spoken Visual QA** generates an answer to a spoken (audio) question about an image.
-- **Task 2: Textual Visual QA** answers the same question presented as text.
-
-See the [Tasks](/tasks/) page for the full definition, and the [OASIS](/oasis/) page for the dataset the shared task is built on.
+See the [Tasks](/tasks/) page for the full definition and evaluation, the [OASIS](/oasis/) page for the dataset, and [Participate](/participate/) for how to take part.
 
 ## Important Dates
 
@@ -38,7 +41,6 @@ All dates are tentative and will be confirmed at the data release.
   {% endfor %}
 </ul>
 
-## Contact
+## Stay in Touch
 
-Registration is open: [sign up using the registration form]({{ site.registration_url }}).
-For full details on taking part, see the [Participate](/participate/) page. A participant mailing list is being set up and will be linked here, and for other questions you can contact the [organizers](/organizers/).
+[Join our Slack]({{ site.slack_url }}) for announcements, questions, and discussion — it is the best place to keep up with the task. For anything else, reach the [organizers](/organizers/).
