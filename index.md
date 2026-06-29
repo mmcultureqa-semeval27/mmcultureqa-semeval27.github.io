@@ -1,7 +1,6 @@
 ---
 title: "Home"
 description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
-toc: false
 ---
 
 # MMCultureQA 2027

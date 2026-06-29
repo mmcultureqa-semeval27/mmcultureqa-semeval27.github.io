@@ -67,15 +67,9 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
 /* ===================================================================
    Document layout: sticky TOC sidebar + content
 =================================================================== */
-/* Reading column sits at the container's left edge (aligned with the header
-   logo and footer); the table of contents sits to its right. */
-.doc { display: flex; gap: 56px; align-items: flex-start; }
-.doc-main { flex: 1 1 auto; max-width: 760px; min-width: 0; }
-.doc-toc { flex: 0 0 220px; }
-
-/* Pages with `toc: false` (e.g. Home) get a single centered column. */
-.doc-no-toc { display: block; }
-.doc-no-toc .doc-main { max-width: 820px; margin: 0 auto; }
+.doc { display: flex; gap: 56px; justify-content: center; }
+.doc-toc { flex: 0 0 230px; }
+.doc-main { flex: 1 1 700px; max-width: 720px; min-width: 0; }
 
 .toc-wrap { position: sticky; top: 92px; }
 .toc-title {
@@ -197,9 +191,9 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
 /* ===================================================================
    Footer
 =================================================================== */
-.site-footer { background: var(--footer-bg); border-top: 1px solid var(--line); padding: 36px 0; text-align: center; color: var(--muted); font-size: .92rem; }
-.site-footer .f-name { font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
-.site-footer p { margin: 5px 0; }
+.site-footer { background: var(--footer-bg); padding: 50px 0; text-align: center; color: var(--muted); }
+.site-footer .f-name { font-size: 1.15rem; font-weight: 700; color: var(--ink); }
+.site-footer p { margin: 6px 0; }
 .site-footer a { color: var(--ink); }
 .site-footer a:hover { color: var(--primary); }
 
@@ -217,10 +211,9 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
    Responsive
 =================================================================== */
 @media (max-width: 900px) {
-  .section-padding { padding: 36px 0 48px; }
   .doc { display: block; }
   .doc-toc { display: none; }
-  .doc-main, .doc-no-toc .doc-main { max-width: none; margin: 0; }
+  .doc-main { max-width: none; }
 
   .nav-toggle { display: block; }
   .site-tagline { display: none; }
@@ -237,11 +230,4 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
 
   .content h1 { font-size: 1.9rem; }
   .content h2 { font-size: 1.4rem; }
-}
-
-@media (max-width: 560px) {
-  .content h1 { font-size: 1.7rem; }
-  .lead-box { font-size: 1rem; padding: 14px 16px; }
-  .buttons { gap: 8px; }
-  .buttons .btn { flex: 1 1 auto; text-align: center; }
 }
