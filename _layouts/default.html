@@ -6,18 +6,20 @@
     {% include header.html %}
 
     <div class="sec section-padding">
-      <div class="container doc">
+      <div class="container doc{% if page.toc == false %} doc-no-toc{% endif %}">
+        <main id="main-content" class="doc-main layout-content">
+          <div class="content">
+            {{ content }}
+          </div>
+        </main>
+        {% unless page.toc == false %}
         <aside class="doc-toc">
           <div class="toc-wrap">
             <p class="toc-title">On this page</p>
             <nav class="toc-list" aria-label="On this page"></nav>
           </div>
         </aside>
-        <main id="main-content" class="doc-main layout-content">
-          <div class="content">
-            {{ content }}
-          </div>
-        </main>
+        {% endunless %}
       </div>
     </div>
 

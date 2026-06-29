@@ -1,11 +1,12 @@
 ---
 title: "Home"
 description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
+toc: false
 ---
 
 # MMCultureQA 2027
 
-<p class="lead-box">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on culturally grounded visual question answering. A system is given an image and a question about it, and writes a short, open-ended answer. The question can be spoken or typed, in English or Arabic.</p>
+<p class="lead-box">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on culturally grounded visual question answering. A system is given an image and a question about it, and writes a short, open-ended answer. The question comes as either speech or text, in English or Arabic.</p>
 
 <p class="buttons">
   <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>
@@ -17,8 +18,8 @@ What makes the task hard is cultural grounding: many questions are about food, p
 
 There are two tasks, and you may enter either or both:
 
-- **Task 1 — Spoken Visual QA:** answer a spoken (audio) question about an image.
-- **Task 2 — Textual Visual QA:** answer the same question presented as text.
+- **Task 1: Spoken Visual QA.** Answer a spoken (audio) question about an image.
+- **Task 2: Textual Visual QA.** Answer the same question presented as text.
 
 See the [Tasks](/tasks/) page for the full definition and evaluation, the [OASIS](/oasis/) page for the dataset, and [Participate](/participate/) for how to take part.
 
@@ -43,4 +44,4 @@ All dates are tentative and will be confirmed at the data release.
 
 ## Stay in Touch
 
-[Join our Slack]({{ site.slack_url }}) for announcements, questions, and discussion — it is the best place to keep up with the task. For anything else, reach the [organizers](/organizers/).
+[Join our Slack]({{ site.slack_url }}) for announcements, questions, and discussion. It is the best place to keep up with the task. For anything else, reach the [organizers](/organizers/).
