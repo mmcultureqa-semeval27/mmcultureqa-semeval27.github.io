@@ -19,11 +19,28 @@ Levantine Arabic, and every question is recorded as audio as well as text.
   <li><b>4</b><span>language varieties</span></li>
 </ul>
 
-<figure>
-  <img src="{{ '/assets/images/oasis_sample.png' | relative_url }}" alt="Overview of the OASIS dataset: an image queried by a spoken and a textual question with the expected open-ended answer, alongside the language varieties, modality setups, and coverage across the MENA region.">
-  <figcaption>Overview of OASIS: each image is paired with spoken and textual questions
-  across English and three Arabic varieties.</figcaption>
-</figure>
+<div class="sample-card">
+  <div class="sample-media">
+    <span class="sample-tag">Input image</span>
+    <img src="{{ '/assets/images/sample-item.jpg' | relative_url }}" alt="The National Museum of Qatar, its interlocking discs inspired by the desert rose" loading="lazy">
+  </div>
+  <div class="sample-dialog">
+    <div class="bubble q">
+      <p class="bubble-tag">Question · spoken and written</p>
+      <p>What is the name of the building shown in the image, and what inspired its design?</p>
+      <p dir="rtl" lang="ar">ما اسم المبنى الموضح في الصورة، وما الذي ألهم تصميمه؟</p>
+      <p class="wave" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p>
+    </div>
+    <div class="bubble a">
+      <p class="bubble-tag">Open-ended answer</p>
+      <p>The building is the National Museum of Qatar, and its design is inspired by desert rose formations.</p>
+      <p dir="rtl" lang="ar">المبنى هو متحف قطر الوطني، وتصميمه مستوحى من تشكيلات الورود الصحراوية.</p>
+    </div>
+  </div>
+</div>
+
+<p class="sample-cap">One OASIS item: the same question is asked as audio and as text, in English
+and Arabic varieties, and the target is a short open-ended answer.</p>
 
 ## Getting the data
 
