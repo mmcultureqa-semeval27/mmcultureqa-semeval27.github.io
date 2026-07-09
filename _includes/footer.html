@@ -1,8 +1,31 @@
 <footer class="site-footer">
   <div class="container">
-    <p class="f-name">MMCultureQA 2027</p>
-    <p>A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on multilingual multimodal cultural question answering.</p>
-    <p><a href="{{ site.slack_url }}" rel="noopener" target="_blank">Slack</a> · <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Dataset</a> · <a href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a></p>
-    <p>© {{ site.time | date: "%Y" }} MMCultureQA. Data under CC&nbsp;BY-NC-SA&nbsp;4.0.</p>
+    <div class="footer-grid">
+      <div>
+        <p class="f-brand"><img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="30" height="30"><span><b>MM</b>CultureQA 2027</span></p>
+        <p class="f-about">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on multilingual, multimodal, culturally grounded visual question answering.</p>
+      </div>
+      <div>
+        <p class="f-title">Site</p>
+        <ul class="f-links">
+          {% for item in site.data.navigation %}{% unless item.url == "/" %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+          {% endunless %}{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <p class="f-title">Connect</p>
+        <ul class="f-links">
+          <li><a href="{{ site.slack_url }}" rel="noopener" target="_blank">Slack community</a></li>
+          <li><a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Dataset on Hugging Face</a></li>
+          <li><a href="{{ site.registration_url }}" rel="noopener" target="_blank">Registration form</a></li>
+          <li><a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{ site.time | date: "%Y" }} MMCultureQA organizers</p>
+      <p>Data released under CC&nbsp;BY-NC-SA&nbsp;4.0</p>
+    </div>
   </div>
 </footer>

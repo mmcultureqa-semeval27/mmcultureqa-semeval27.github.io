@@ -1,62 +1,41 @@
 ---
 title: "Participate"
-description: "How to participate in MMCultureQA SemEval 2027: registration, data, submission on CodaBench, rules, and FAQ."
+lede: "Participation is open and free to individuals and teams from academia and industry. Enter one task or both, in any of the language tracks."
+description: "How to participate in MMCultureQA SemEval 2027: registration, data, submission on CodaBench, and rules."
+ctas: [register, slack]
 ---
 
-# Participate
+## How it works
 
-<p class="lead-box">Participation is open and free to individuals and teams from academia
-and industry. Enter one task or both, in any of the available language tracks.</p>
-
-<p class="buttons">
-  <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>
-  <a class="btn secondary" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Get the dataset</a>
-  <a class="btn secondary" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
-</p>
-
-## How to Take Part
-
-1. **Register.** Sign up using the [registration form]({{ site.registration_url }}) and
-   accept the dataset usage terms.
-2. **Get the data.** The dataset is hosted on [Hugging Face]({{ site.dataset_url }}). Start
-   with the sample set (from 15 July 2026) to preview the format, then download the full
-   training and development data (from 1 September 2026).
-3. **Build your system.** Develop a model for Task 1 (spoken), Task 2 (textual), or both,
-   across whichever language tracks you choose.
-4. **Evaluate locally.** Use the official evaluation script to measure BERTScore F1 (plus
-   BLEU and ROUGE) before you submit.
-5. **Submit on CodaBench.** During the evaluation phase (10 to 31 January 2027), submit your
-   predictions on the official competition.
-6. **Write it up.** Submit a system description paper for the SemEval 2027 proceedings and
-   present your work at the workshop.
+<ol class="steps">
+  <li><strong>Register your team.</strong> Fill in the <a href="{{ site.registration_url }}" rel="noopener" target="_blank">registration form</a> and accept the dataset usage terms.</li>
+  <li><strong>Get the data.</strong> Start with the <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">sample set on Hugging Face</a> to preview the format; the full training and development data arrive on the schedule in the <a href="/#dates">timeline</a>.</li>
+  <li><strong>Build your system.</strong> Target Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
+  <li><strong>Evaluate locally.</strong> Reproduce the official BERTScore F1 ranking with the evaluation script that ships with the data.</li>
+  <li><strong>Submit on CodaBench.</strong> During the evaluation phase, upload your predictions to the official competition.</li>
+  <li><strong>Write it up.</strong> Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
+</ol>
 
 ## Submission
 
-Submissions are planned through **CodaBench**. The competition link, the submission format,
-and the official evaluation script will be posted here when the evaluation phase opens. A
-starter kit with data loaders and baseline systems will be released with the data.
+Submissions run through **CodaBench**. The competition link and the exact submission format
+will be posted here when the evaluation phase opens. A starter kit with data loaders,
+baseline systems, and the scorer is released together with the training data.
 
 ## Rules
 
-Full rules ship with the starter kit. The essentials:
+The full rules ship with the starter kit. The essentials:
 
-- **Eligibility:** open and free to everyone, individuals and teams alike.
-- **Tasks and tracks:** enter any subset, a single task, a single language track, or all of them. Systems are ranked per task and per track.
-- **Ranking:** planned official ranking by BERTScore F1.
-- **External resources:** pretrained models and public data are generally permitted; document them in your paper. Any limits will be stated at release.
-- **Data license:** CC BY-NC-SA 4.0, for non-commercial research use.
+- Enter any subset: one task or both, one language track or all of them. Systems are ranked
+  per task and per track.
+- The official ranking metric is BERTScore F1, described under
+  [Evaluation](/tasks/#evaluation).
+- Pretrained models and public external data are generally permitted; document what you used
+  in your system paper. Any limits will be stated at the data release.
+- The data is licensed for non-commercial research use; see
+  [the dataset page](/oasis/#license).
 
-## Frequently Asked Questions
+## Questions?
 
-{% for item in site.data.faq %}
-<details class="faq-item">
-  <summary>{{ item.q }}</summary>
-  <div class="faq-body"><p>{{ item.a }}</p></div>
-</details>
-{% endfor %}
-
-## Contact
-
-[Join our Slack]({{ site.slack_url }}) for announcements about data, baselines, and
-submission, and to ask questions. You can also reach the team on the
-[organizers](/organizers/) page and watch the [home page](/) for updates.
+Ask in the [community Slack]({{ site.slack_url }}), where announcements about data,
+baselines, and submission land first, or contact the [organizers](/organizers/).

@@ -1,17 +1,23 @@
-// Blue primary, red accent, white. Modeled on the ImageEval palette with a red twist.
+// Blue primary, red accent (sparing), white. Same palette as before, new layout system.
 :root {
-  --primary: #1f6fb2;       // blue
-  --primary-dark: #175a90;
-  --accent: #c0303a;        // red (used sparingly)
-  --ink: #1f2d3d;           // headings
-  --text: #41505e;          // body
-  --muted: #6a7783;         // secondary text
-  --line: #e4e8ed;          // borders / hairlines
-  --line-2: #d6dee6;
+  --primary: #1f6fb2;        // blue
+  --primary-dark: #185a92;
+  --primary-soft: #e9f1f8;   // chips, icon tiles, hero wash
+  --accent: #c0303a;         // red, used sparingly
+  --accent-soft: #faedee;
+
+  --ink: #17222d;            // headings
+  --text: #3f4e5c;           // body
+  --muted: #67757f;          // secondary text
+  --line: #e4e9ee;           // hairlines
+  --line-2: #d3dce4;         // stronger borders
   --bg: #ffffff;
-  --soft: #f4f8fb;          // note boxes, table head
-  --soft-2: #fafbfc;
-  --footer-bg: #f1f1f1;
+  --soft: #f5f8fb;           // tinted panels
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 2px rgba(23, 34, 45, .05);
+  --shadow-md: 0 10px 28px rgba(23, 34, 45, .09);
 
   --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }

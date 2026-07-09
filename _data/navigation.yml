@@ -2,7 +2,7 @@
   url: "/"
 - name: "Tasks"
   url: "/tasks/"
-- name: "OASIS"
+- name: "Dataset"
   url: "/oasis/"
 - name: "Participate"
   url: "/participate/"

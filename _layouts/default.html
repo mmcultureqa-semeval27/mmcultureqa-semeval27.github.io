@@ -3,33 +3,34 @@
   {% include head.html %}
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <div class="site-notice">
-      <div class="container">
-        📢 We are also co-hosting <a href="https://imageeval2026.github.io/task1/" rel="noopener" target="_blank">ImageEval 2026</a>, a shared task at ArabicNLP 2026, co-located with EMNLP.
-      </div>
-    </div>
     {% include header.html %}
 
-    <div class="sec section-padding">
-      <div class="container doc">
-        <aside class="doc-toc">
-          <div class="toc-wrap">
-            <p class="toc-title">On this page</p>
-            <nav class="toc-list" aria-label="On this page"></nav>
-          </div>
-        </aside>
-        <main id="main-content" class="doc-main layout-content">
-          <div class="content">
-            {{ content }}
-          </div>
-        </main>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container-narrow">
+          <h1>{{ page.title }}</h1>
+          {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+          {% if page.ctas %}
+          <p class="buttons">
+            {% for key in page.ctas %}
+              {% case key %}
+              {% when "register" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register your team</a>
+              {% when "dataset" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Open on Hugging Face</a>
+              {% when "slack" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
+              {% endcase %}
+            {% endfor %}
+          </p>
+          {% endif %}
+        </div>
+      </section>
+
+      <div class="page-body">
+        <div class="container-narrow content">
+          {{ content }}
+        </div>
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
-
-    <a href="#" id="back-to-top" aria-label="Back to top">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </a>
   </body>
 </html>

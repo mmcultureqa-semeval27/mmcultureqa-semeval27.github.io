@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include header.html %}
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <p class="hero-eyebrow"><span class="dot"></span>SemEval 2027 · Shared Task</p>
+          <h1><b>MM</b>CultureQA</h1>
+          <p class="hero-tagline">Given an image and a question, spoken or written, systems produce a short open-ended answer. The catch: many answers require local cultural knowledge, not just what is visible in the picture.</p>
+          <p class="buttons">
+            <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register your team</a>
+            <a class="btn secondary" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Get the dataset</a>
+            <a class="btn secondary" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
+          </p>
+          <ul class="hero-facts">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>Speech and text questions</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>7+ language tracks</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Ranked by BERTScore F1</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>Built on the OASIS dataset</li>
+          </ul>
+        </div>
+      </section>
+
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
