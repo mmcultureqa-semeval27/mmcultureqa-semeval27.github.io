@@ -26,7 +26,7 @@ Levantine Arabic, and every question is recorded as audio as well as text.
   </div>
   <div class="record-body">
     <div class="record-media">
-      <img src="{{ '/assets/images/sample-item.jpg' | relative_url }}" alt="The National Museum of Qatar, its interlocking discs inspired by the desert rose" loading="lazy">
+      <img src="{{ '/assets/images/sample-item-2.jpg' | relative_url }}" alt="The National Museum of Qatar, its interlocking discs inspired by the desert rose" loading="lazy">
     </div>
     <dl class="record-fields">
       <div class="field">
@@ -53,8 +53,10 @@ Levantine Arabic, and every question is recorded as audio as well as text.
   </div>
 </div>
 
-<p class="sample-cap">One OASIS item: the same question is asked as audio and as text, in English
-and Arabic varieties, and the target is a short open-ended answer.</p>
+<p class="sample-cap">An example record: the same question is asked as audio and as text, in
+English and Arabic varieties, and the target is a short open-ended answer.
+Photo: <a href="https://commons.wikimedia.org/wiki/File:Nmoq.jpg" rel="noopener" target="_blank">Msarg77</a>,
+<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
 
 ## Getting the data
 
