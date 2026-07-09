@@ -18,9 +18,8 @@ of the question.</p>
 
 Answers are free text rather than multiple choice, so they must be semantically
 appropriate, grounded in the visual content, and sensitive to the relevant linguistic and
-cultural context. The question is presented either as speech or as text, across English and
-Arabic varieties. Systems are scored on how closely their answer matches the reference
-meaning.
+cultural context. The question is presented either as speech or as text, across a range of
+languages. Systems are scored on how closely their answer matches the reference meaning.
 
 ## The two tasks
 
@@ -40,9 +39,14 @@ speech recognition errors.
 
 ## Language tracks
 
-Each task is offered as a separate track for each language variety, and systems are ranked
-per track. English and Modern Standard Arabic are confirmed; Egyptian Arabic and Levantine
-Arabic are planned, with more to follow.
+Each task is offered as a separate track for each language, and systems are ranked per
+track.
+
+**Languages covered:** Arabic with dialectal varieties, Bangla, English, Hindi, Assamese,
+Urdu, and more.
+
+English and Modern Standard Arabic are confirmed for the first release; the remaining
+languages are planned and will be added in the same format.
 
 ## Evaluation
 

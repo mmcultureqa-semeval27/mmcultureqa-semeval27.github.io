@@ -23,6 +23,14 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.22; letter-
 .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
 .section-padding { padding: 56px 0 72px; }
 
+/* ---------- Site notice bar ---------- */
+.site-notice {
+  background: var(--primary); color: #fff;
+  font-size: .9rem; text-align: center; padding: 9px 0;
+}
+.site-notice a { color: #fff; font-weight: 700; text-decoration: underline; }
+.site-notice a:hover { color: #fff; }
+
 /* ---------- Skip link / focus ---------- */
 .skip-link { position: absolute; left: -9999px; }
 .skip-link:focus {

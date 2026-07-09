@@ -1,11 +1,11 @@
 ---
 title: "Home"
-description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
+description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering across many languages, with spoken and textual questions."
 ---
 
 # MMCultureQA 2027
 
-<p class="lead-box">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on culturally grounded visual question answering. A system is given an image and a question about it, and writes a short, open-ended answer. The question comes as either speech or text, in English or Arabic.</p>
+<p class="lead-box">A <a href="https://semeval.github.io/SemEval2027/" rel="noopener" target="_blank">SemEval 2027</a> shared task on culturally grounded visual question answering. A system is given an image and a question about it, and writes a short, open-ended answer. The question comes as either speech or text, across many languages.</p>
 
 <p class="buttons">
   <a class="btn" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register</a>

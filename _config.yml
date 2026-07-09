@@ -1,6 +1,6 @@
 title: "MMCultureQA 2027"
 tagline: "Multilingual Multimodal Cultural Question Answering"
-description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering in English and Arabic varieties, with spoken and textual questions."
+description: "SemEval 2027 shared task on multilingual multimodal cultural question answering: open-ended visual question answering across many languages, with spoken and textual questions."
 url: "https://mmcultureqa-semeval27.github.io"
 baseurl: ""
 permalink: pretty
