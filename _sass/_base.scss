@@ -390,40 +390,52 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
 .stat-grid li:nth-child(4) b { color: var(--primary-dark); }
 .stat-grid span { font-size: .82rem; font-weight: 600; color: var(--muted); }
 
-/* Sample item card (dataset page) */
-.sample-card {
-  display: grid; grid-template-columns: 300px 1fr;
+/* Sample record (dataset page), styled like a dataset-viewer row */
+.record {
   border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
   background: #fff; box-shadow: var(--shadow-sm);
   margin: 1.6rem 0 0;
 }
-.sample-media { position: relative; }
-.sample-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.sample-tag {
-  position: absolute; top: 10px; left: 10px; z-index: 1;
-  padding: 3px 10px; border-radius: 999px;
-  background: rgba(255, 255, 255, .92); color: var(--ink);
-  font-size: .7rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
-  box-shadow: var(--shadow-sm);
+.record-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 18px;
+  background: var(--soft); border-bottom: 1px solid var(--line);
 }
-.sample-dialog { padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; }
-.bubble { border-radius: 12px; padding: 12px 16px; font-size: .93rem; }
-.bubble p { margin: 0 0 5px; }
-.bubble p:last-child { margin-bottom: 0; }
-.bubble .bubble-tag {
-  margin: 0 0 7px;
-  font-size: .67rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+.record-title {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .76rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--ink);
 }
-.bubble.q { background: var(--primary-soft); border-bottom-left-radius: 4px; margin-right: 26px; }
-.bubble.q .bubble-tag { color: var(--primary-dark); }
-.bubble.a { background: var(--accent-soft); border-bottom-right-radius: 4px; margin-left: 26px; }
-.bubble.a .bubble-tag { color: var(--accent); }
-.wave { display: flex; align-items: center; gap: 3px; margin-top: 10px; color: var(--primary); }
+.record-title::before {
+  content: ""; width: 8px; height: 8px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+.record-mods {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .74rem; color: var(--muted);
+}
+.record-body { display: grid; grid-template-columns: 300px 1fr; }
+.record-media { border-right: 1px solid var(--line); }
+.record-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.record-fields { margin: 0; padding: 4px 20px; }
+.record-fields .field {
+  display: grid; grid-template-columns: 138px 1fr; gap: 14px;
+  padding: 11px 0; border-bottom: 1px solid var(--line);
+}
+.record-fields .field:last-child { border-bottom: 0; }
+.record-fields dt {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .76rem; color: var(--primary-dark); padding-top: 3px;
+}
+.record-fields dd { margin: 0; font-size: .93rem; }
+.record-fields dd[dir="rtl"] { text-align: right; font-size: .98rem; }
+.wave { display: inline-flex; align-items: center; gap: 3px; color: var(--primary); vertical-align: middle; }
 .wave svg { margin-right: 4px; flex: none; }
 .wave span { width: 3px; height: 7px; border-radius: 2px; background: var(--primary); opacity: .75; }
 .wave span:nth-child(3n) { height: 15px; }
 .wave span:nth-child(4n) { height: 11px; }
 .wave span:nth-child(5n) { height: 17px; opacity: .55; }
+.wave-note { font-size: .84rem; color: var(--muted); margin-left: 8px; }
 .sample-cap { font-size: .86rem; color: var(--muted); margin-top: .6rem; }
 
 /* Organizers grid */
@@ -532,10 +544,11 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
 }
 
 @media (max-width: 720px) {
-  .sample-card { grid-template-columns: 1fr; }
-  .sample-media img { height: 210px; }
-  .bubble.q { margin-right: 10px; }
-  .bubble.a { margin-left: 10px; }
+  .record-body { grid-template-columns: 1fr; }
+  .record-media { border-right: 0; border-bottom: 1px solid var(--line); }
+  .record-media img { height: 210px; }
+  .record-fields .field { display: block; }
+  .record-fields dt { padding: 0 0 3px; }
 }
 
 @media (max-width: 560px) {
