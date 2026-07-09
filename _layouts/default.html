@@ -29,6 +29,21 @@
           {{ content }}
         </div>
       </div>
+
+      {% unless page.url == "/participate/" %}
+      <section class="cta-band">
+        <div class="container cta-inner">
+          <div>
+            <p class="cta-title">Ready to take part?</p>
+            <p class="cta-sub">Registration is free, and the Slack community is where news lands first.</p>
+          </div>
+          <p class="buttons">
+            <a class="btn light" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register your team</a>
+            <a class="btn ghost" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
+          </p>
+        </div>
+      </section>
+      {% endunless %}
     </main>
 
     {% include footer.html %}
