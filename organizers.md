@@ -1,6 +1,6 @@
 ---
 title: "Organizers"
-lede: "MMCultureQA is organized by researchers at the Qatar Computing Research Institute (HBKU) together with partners at the University of Toronto, MEF University, and Macquarie University."
+lede: "MMCultureQA is organized by researchers across nine institutions in Asia, Europe, North America, and Australia, led from the Qatar Computing Research Institute (HBKU)."
 description: "The team organizing the MMCultureQA SemEval 2027 shared task."
 ---
 
@@ -12,6 +12,7 @@ description: "The team organizing the MMCultureQA SemEval 2027 shared task."
       {% if person.link %}<a href="{{ person.link }}" rel="noopener" target="_blank">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
     </p>
     {% if person.affiliation %}<p class="org-affil">{{ person.affiliation }}</p>{% endif %}
+    {% if person.email %}<p class="org-email"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
   </li>
   {% endfor %}
 </ul>
