@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign seo_pages = site.pages | where_exp: "p", "p.url == '/' or p.url == '/tasks/' or p.url == '/oasis/' or p.url == '/participate/' or p.url == '/organizers/'" | sort: "url" %}
+  {% for p in seo_pages %}
+  <url>
+    <loc>{{ p.url | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>{{ p.changefreq | default: "monthly" }}</changefreq>
+    <priority>{{ p.priority | default: 0.7 }}</priority>
+  </url>
+  {% endfor %}
+</urlset>

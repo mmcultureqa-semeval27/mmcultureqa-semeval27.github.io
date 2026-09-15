@@ -2,6 +2,8 @@
 title: "Tasks & Evaluation"
 lede: "Two tasks with a shared goal: open-ended answers to questions about images, appropriate to the language and culture of the asker."
 description: "Task definitions, language tracks, and evaluation for the MMCultureQA SemEval 2027 shared task."
+priority: 0.9
+changefreq: weekly
 ---
 
 ## Task definition

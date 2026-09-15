@@ -3,6 +3,9 @@ title: "The OASIS Dataset"
 lede: "The shared task is built on OASIS: images paired with spoken and written questions and open-ended answers, collected across the MENA region."
 description: "OASIS, the multilingual multimodal dataset behind the MMCultureQA SemEval 2027 shared task: what it covers, how to get it, and how to cite it."
 ctas: [dataset]
+schema_type: "Dataset"
+priority: 0.9
+changefreq: weekly
 ---
 
 ## What's inside

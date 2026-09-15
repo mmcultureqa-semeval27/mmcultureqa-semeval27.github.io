@@ -4,6 +4,26 @@ description: "SemEval 2027 shared task on multilingual multimodal cultural quest
 url: "https://mmcultureqa-semeval27.github.io"
 baseurl: ""
 permalink: pretty
+lang: "en"
+author: "MMCultureQA organizers"
+logo: "/assets/images/logo-mark.svg"
+image: "/assets/images/sample-item-2.jpg"
+keywords:
+  - SemEval 2027
+  - MMCultureQA
+  - multilingual question answering
+  - multimodal question answering
+  - visual question answering
+  - spoken question answering
+  - cultural question answering
+  - culturally grounded AI
+  - OASIS dataset
+  - Arabic NLP
+  - low-resource languages
+
+# Add the token from Google Search Console here if site ownership verification
+# is requested, for example: google_site_verification: "abc123"
+google_site_verification: ""
 
 # Shared links (edit in one place)
 registration_url: "https://docs.google.com/forms/d/15-Vbs82rBF6TCwxT4aAiJDWiiDqPI6uaggz95qStSkQ/viewform"
@@ -19,6 +39,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: "/assets/images/sample-item-2.jpg"
 
 exclude:
   - Gemfile

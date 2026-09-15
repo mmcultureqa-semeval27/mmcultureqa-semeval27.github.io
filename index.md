@@ -2,6 +2,8 @@
 layout: home
 title: "Home"
 description: "MMCultureQA, a SemEval 2027 shared task on culturally grounded visual question answering: open-ended answers to spoken and written questions about images, across many languages."
+priority: 1.0
+changefreq: weekly
 ---
 
 <section class="home-section" id="task">

@@ -2,6 +2,8 @@
 title: "Organizers"
 lede: "MMCultureQA is organized by researchers across nine institutions in Asia, Europe, North America, and Australia, led from the Qatar Computing Research Institute (HBKU)."
 description: "The team organizing the MMCultureQA SemEval 2027 shared task."
+priority: 0.8
+changefreq: monthly
 ---
 
 <ul class="org-grid">

@@ -12,6 +12,19 @@ bundle exec jekyll serve
 
 Then open <http://localhost:4000>.
 
+## Search indexing
+
+The site publishes `robots.txt`, `sitemap.xml`, canonical URLs, social preview
+metadata, and schema.org JSON-LD for Google indexing. Submit this sitemap in
+Google Search Console after deployment:
+
+```text
+https://mmcultureqa-semeval27.github.io/sitemap.xml
+```
+
+If Search Console asks for an HTML meta verification token, add it to
+`google_site_verification` in `_config.yml`.
+
 ## Editing content
 
 Most content is data-driven. Edit the YAML files in `_data/`, no templating needed:

@@ -3,6 +3,8 @@ title: "Participate"
 lede: "Participation is open and free to individuals and teams from academia and industry. Enter one task or both, in any of the language tracks."
 description: "How to participate in MMCultureQA SemEval 2027: registration, data, submission on CodaBench, and rules."
 ctas: [register, slack]
+priority: 0.9
+changefreq: weekly
 ---
 
 ## How it works

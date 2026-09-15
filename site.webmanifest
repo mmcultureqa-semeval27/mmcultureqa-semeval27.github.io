@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /site.webmanifest
+---
+{
+  "name": "{{ site.title }}",
+  "short_name": "MMCultureQA",
+  "description": {{ site.description | jsonify }},
+  "start_url": "{{ '/' | relative_url }}",
+  "scope": "{{ '/' | relative_url }}",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "{{ '/assets/images/logo-mark.svg' | relative_url }}",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

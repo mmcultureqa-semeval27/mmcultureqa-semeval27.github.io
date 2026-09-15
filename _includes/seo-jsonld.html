@@ -1,0 +1,69 @@
+{% assign page_title = include.title | default: site.title %}
+{% assign page_description = include.description | default: site.description %}
+{% assign page_image = include.image | default: site.image %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "MMCultureQA organizers",
+      "url": "{{ site.url }}/",
+      "logo": "{{ site.logo | absolute_url }}"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "name": "{{ site.title }}",
+      "alternateName": "MMCultureQA SemEval 2027",
+      "url": "{{ site.url }}/",
+      "description": {{ site.description | jsonify }},
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "inLanguage": "{{ site.lang | default: 'en' }}"
+    },
+    {
+      "@type": "{% if page.schema_type %}{{ page.schema_type }}{% else %}WebPage{% endif %}",
+      "@id": "{{ page.url | absolute_url }}#webpage",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page_title | jsonify }},
+      "description": {{ page_description | jsonify }},
+      "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+      },
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "image": "{{ page_image | absolute_url }}",
+      "inLanguage": "{{ site.lang | default: 'en' }}"{% if page.schema_type == "Dataset" %},
+      "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "text/html",
+        "contentUrl": "{{ site.dataset_url }}"
+      },
+      "keywords": {{ site.keywords | join: ", " | jsonify }}{% endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ page.url | absolute_url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ '/' | absolute_url }}"
+        }{% if page.url != "/" %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ page.url | absolute_url }}"
+        }{% endif %}
+      ]
+    }
+  ]
+}
+</script>
