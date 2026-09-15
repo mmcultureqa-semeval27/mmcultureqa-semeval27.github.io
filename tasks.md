@@ -32,24 +32,9 @@ Each task is offered as a separate track per language, and systems are ranked pe
 Eighteen language varieties are planned. You can enter a single track, several, or all of them.
 
 <ul class="chip-row">
-  <li><span class="chip">Modern Standard Arabic</span></li>
-  <li><span class="chip">Levantine Arabic</span></li>
-  <li><span class="chip">Egyptian Arabic</span></li>
-  <li><span class="chip">English</span></li>
-  <li><span class="chip">Bangla</span></li>
-  <li><span class="chip">Urdu</span></li>
-  <li><span class="chip">Hindi</span></li>
-  <li><span class="chip">Assamese</span></li>
-  <li><span class="chip">Gujarati</span></li>
-  <li><span class="chip">Marathi</span></li>
-  <li><span class="chip">Italian</span></li>
-  <li><span class="chip">Spanish</span></li>
-  <li><span class="chip">Portuguese</span></li>
-  <li><span class="chip">Turkish</span></li>
-  <li><span class="chip">Amharic</span></li>
-  <li><span class="chip">Oromo</span></li>
-  <li><span class="chip">Somali</span></li>
-  <li><span class="chip">Tigrinya</span></li>
+  {% for l in site.data.languages %}
+  <li><span class="chip">{{ l.name }}</span></li>
+  {% endfor %}
 </ul>
 
 <p class="chip-note">Tracks open as the data for each language becomes available. Which ones

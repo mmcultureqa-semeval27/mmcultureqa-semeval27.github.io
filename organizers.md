@@ -12,7 +12,6 @@ description: "The team organizing the MMCultureQA SemEval 2027 shared task."
       {% if person.link %}<a href="{{ person.link }}" rel="noopener" target="_blank">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
     </p>
     {% if person.affiliation %}<p class="org-affil">{{ person.affiliation }}</p>{% endif %}
-    {% if person.email %}<p class="org-email"><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
   </li>
   {% endfor %}
 </ul>

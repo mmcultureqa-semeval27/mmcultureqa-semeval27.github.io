@@ -31,7 +31,26 @@ description: "MMCultureQA, a SemEval 2027 shared task on culturally grounded vis
   </div>
 </section>
 
-<section class="home-section tinted" id="dates">
+<section class="home-section tinted" id="languages">
+  <div class="container">
+    <p class="kicker">Languages</p>
+    <h2>Eighteen varieties, one task</h2>
+    <p class="section-intro">A question is asked, and answered, in the language of the people the images come from. These are the varieties planned for the shared task, each in its own script.</p>
+    <ul class="lang-grid">
+      {% for l in site.data.languages %}
+      <li>
+        <div class="lang-tile">
+          <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
+          <span class="lang-en">{{ l.name }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="section-foot">Every language is a separate track, and you can enter any subset. How tracks open and how they are scored is on <a href="/tasks/">Tasks &amp; Evaluation</a>.</p>
+  </div>
+</section>
+
+<section class="home-section" id="dates">
   <div class="container">
     <p class="kicker">Timeline</p>
     <h2>Important dates</h2>
@@ -53,7 +72,7 @@ description: "MMCultureQA, a SemEval 2027 shared task on culturally grounded vis
   </div>
 </section>
 
-<section class="home-section" id="news">
+<section class="home-section tinted" id="news">
   <div class="container">
     <p class="kicker">News</p>
     <h2>Latest updates</h2>
