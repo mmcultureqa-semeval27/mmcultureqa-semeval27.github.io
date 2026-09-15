@@ -34,8 +34,7 @@ description: "MMCultureQA, a SemEval 2027 shared task on culturally grounded vis
 <section class="home-section tinted" id="languages">
   <div class="container">
     <p class="kicker">Languages</p>
-    <h2>Eighteen varieties, one task</h2>
-    <p class="section-intro">A question is asked, and answered, in the language of the people the images come from. These are the varieties planned for the shared task, each in its own script.</p>
+    <h2>Eighteen language tracks</h2>
     <ul class="lang-grid">
       {% for l in site.data.languages %}
       <li>
