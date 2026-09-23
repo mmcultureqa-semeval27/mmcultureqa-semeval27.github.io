@@ -1,6 +1,6 @@
 ---
 title: "Tasks & Evaluation"
-lede: "Two tasks with a shared goal: open-ended answers to questions about images, appropriate to the language and culture of the asker."
+lede: "Open-ended answers to questions about images, in the language the question was asked in."
 description: "Task definitions, language tracks, and evaluation for the MMCultureQA SemEval 2027 shared task."
 priority: 0.9
 changefreq: weekly
@@ -25,8 +25,8 @@ enter either task or both.
 | **Task 1: Spoken Visual QA** | Image + spoken question (audio) | Open-ended answer (text) |
 | **Task 2: Textual Visual QA** | Image + written question (text) | Open-ended answer (text) |
 
-Task 1 tests end-to-end understanding when the question arrives as speech. Task 2 removes
-speech recognition from the equation and isolates multimodal, culturally grounded reasoning.
+Task 1 tests end-to-end understanding when the question arrives as speech. Task 2 drops the
+speech recognition step, so what is left is multimodal and cultural reasoning.
 
 ## Language tracks
 

@@ -9,8 +9,8 @@ changefreq: weekly
 <section class="home-section" id="task">
   <div class="container">
     <p class="kicker">The task</p>
-    <h2>Vision alone is not enough</h2>
-    <p class="section-intro">Questions cover food, places, customs, and everyday objects, so the right answer often depends on cultural knowledge rather than plain visual recognition. Every question exists in two forms, audio and text, which gives the shared task its two tasks:</p>
+    <h2>Questions that need local knowledge</h2>
+    <p class="section-intro">Questions cover food, places, customs, and everyday objects, so the right answer often depends on cultural knowledge rather than plain visual recognition. Every question comes in two forms, audio and text, and that is what separates the two tasks:</p>
     <div class="task-cards">
       <a class="task-card" href="/tasks/">
         <span class="task-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></span>

@@ -10,12 +10,12 @@ changefreq: weekly
 ## How it works
 
 <ol class="steps">
-  <li><strong>Register your team.</strong> Fill in the <a href="{{ site.registration_url }}" rel="noopener" target="_blank">registration form</a> and accept the dataset usage terms.</li>
-  <li><strong>Get the data.</strong> Start with the <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">sample set on Hugging Face</a> to preview the format; the full training and development data arrive on the schedule in the <a href="/#dates">timeline</a>.</li>
-  <li><strong>Build your system.</strong> Target Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
-  <li><strong>Evaluate locally.</strong> Reproduce the official BERTScore F1 ranking with the evaluation script that ships with the data.</li>
-  <li><strong>Submit on CodaBench.</strong> During the evaluation phase, upload your predictions to the official competition.</li>
-  <li><strong>Write it up.</strong> Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
+  <li>Fill in the <a href="{{ site.registration_url }}" rel="noopener" target="_blank">registration form</a> and accept the dataset usage terms.</li>
+  <li>Download the tracks you want from <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. Training and development data for the MENA region is out now; the remaining language tracks follow on the schedule in the <a href="/#dates">timeline</a>.</li>
+  <li>Build a system for Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
+  <li>Check your scores locally with the evaluation script that ships with the data, so your numbers match ours.</li>
+  <li>Upload your predictions to the CodaBench competition during the evaluation phase.</li>
+  <li>Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
 </ol>
 
 ## Submission
