@@ -1,3 +1,8 @@
+- date: "23 September 2026"
+  title: "Training and development data are out"
+  text: "The MENA region is released: 10,000 training and 1,000 development items for every track, in English, Modern Standard Arabic, Egyptian Arabic, and Levantine Arabic, with each question available as both text and audio. More language tracks follow."
+  link: "https://huggingface.co/datasets/QCRI/MMCQA-SemEval27"
+  link_text: "Get the data"
 - date: "14 September 2026"
   title: "Eighteen language tracks planned"
   text: "Track coverage now spans Arabic varieties, English, six South Asian languages, Italian, Spanish, Portuguese, Turkish, and four languages of the Horn of Africa. The organizing team has grown to twenty researchers across nine institutions."

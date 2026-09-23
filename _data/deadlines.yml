@@ -2,11 +2,15 @@
   date: "15 July 2026"
   iso: "2026-07-15"
   note: "A small sample set to preview format and build a pipeline."
-  released: true
 - label: "Training data release"
+  date: "23 September 2026"
+  iso: "2026-09-23"
+  note: "Training and development data for the MENA region, in English and three Arabic varieties."
+  released: true
+- label: "More language tracks"
   date: "To be announced"
   iso: "2026-12-31"
-  note: "Full training and development data. The date will be announced here and on Slack."
+  note: "The remaining language tracks, and a second development set."
 - label: "Evaluation phase begins"
   date: "10 January 2027"
   iso: "2027-01-10"

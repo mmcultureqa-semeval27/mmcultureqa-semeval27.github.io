@@ -64,9 +64,11 @@ Photo: <a href="https://commons.wikimedia.org/wiki/File:Nmoq.jpg" rel="noopener"
 ## Getting the data
 
 The shared-task data is hosted on [Hugging Face]({{ site.dataset_url }}) and is drawn from
-OASIS, or created with the same framework. A sample set is available now so you can preview
-the format; the training and development data follow on the schedule in the
-[timeline](/#dates).
+OASIS, or created with the same framework. Training and development data for the MENA region
+is available now: 10,000 training and 1,000 development items for each track, in English,
+Modern Standard Arabic, Egyptian Arabic, and Levantine Arabic. Each item carries the image,
+the question as text and as audio, and a reference answer. The remaining language tracks
+follow on the schedule in the [timeline](/#dates).
 
 ## License
 
