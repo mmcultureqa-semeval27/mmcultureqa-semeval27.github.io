@@ -10,14 +10,14 @@ changefreq: weekly
   <div class="container">
     <p class="kicker">The task</p>
     <h2>Questions that need local knowledge</h2>
-    <p class="section-intro">Questions cover food, places, customs, and everyday objects, so the right answer often depends on cultural knowledge rather than plain visual recognition. Every question comes in two forms, audio and text, and that is what separates the two tasks:</p>
+    <p class="section-intro">Questions cover food, places, customs, and everyday objects, and the answer depends on cultural knowledge as much as on the image. Every question comes in two forms, audio and text:</p>
     <div class="task-cards">
       <a class="task-card" href="/tasks/">
         <span class="task-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></span>
         <p class="task-num">Task 1</p>
         <h3>Spoken Visual QA</h3>
         <p class="task-io"><span>Image + spoken question</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span>Short text answer</span></p>
-        <p>Answer a question asked as audio, testing multimodal understanding directly from speech.</p>
+        <p>The question arrives as speech.</p>
         <span class="more">Task details →</span>
       </a>
       <a class="task-card alt" href="/tasks/">
@@ -25,11 +25,11 @@ changefreq: weekly
         <p class="task-num">Task 2</p>
         <h3>Textual Visual QA</h3>
         <p class="task-io"><span>Image + written question</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span>Short text answer</span></p>
-        <p>Answer the same question presented as text, with speech recognition taken out of the picture.</p>
+        <p>The same question, without the speech step.</p>
         <span class="more">Task details →</span>
       </a>
     </div>
-    <p class="section-foot">Each task runs as a separate track per language, and you can enter any subset. See <a href="/tasks/">Tasks &amp; Evaluation</a> for the full definition and the <a href="/oasis/">OASIS dataset</a> the task is built on.</p>
+    <p class="section-foot">Each task runs as a separate track per language. See <a href="/tasks/">Tasks &amp; Evaluation</a> and the <a href="/oasis/">OASIS dataset</a>.</p>
   </div>
 </section>
 
@@ -47,7 +47,7 @@ changefreq: weekly
       </li>
       {% endfor %}
     </ul>
-    <p class="section-foot">Every language is a separate track, and you can enter any subset. How tracks open and how they are scored is on <a href="/tasks/">Tasks &amp; Evaluation</a>.</p>
+    <p class="section-foot">Enter any subset. Scoring is on <a href="/tasks/">Tasks &amp; Evaluation</a>.</p>
   </div>
 </section>
 
@@ -55,7 +55,7 @@ changefreq: weekly
   <div class="container">
     <p class="kicker">Timeline</p>
     <h2>Important dates</h2>
-    <p class="section-intro">All dates are tentative and will be confirmed at the data release.</p>
+    <p class="section-intro">Dates are tentative.</p>
     {% assign now = site.time | date: "%s" | plus: 0 %}
     {% assign next_found = false %}
     <ol class="timeline">

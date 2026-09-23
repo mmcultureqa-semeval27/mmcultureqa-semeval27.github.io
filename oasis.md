@@ -10,10 +10,9 @@ changefreq: weekly
 
 ## What's inside
 
-OASIS pairs each image with a question and an open-ended answer, in both spoken and written
-form. The data was collected across 18 countries in the MENA region and spans everyday and
-cultural life. Questions come in English, Modern Standard Arabic, Egyptian Arabic, and
-Levantine Arabic, and every question is recorded as audio as well as text.
+OASIS pairs each image with a question and an open-ended answer, spoken and written. It was
+collected across 18 countries in the MENA region, in English, Modern Standard Arabic,
+Egyptian Arabic, and Levantine Arabic.
 
 <ul class="stat-grid">
   <li><b>18</b><span>countries covered</span></li>
@@ -56,8 +55,8 @@ Levantine Arabic, and every question is recorded as audio as well as text.
   </div>
 </div>
 
-<p class="sample-cap">An example record: the same question is asked as audio and as text, in
-English and Arabic varieties, and the target is a short open-ended answer.
+<p class="sample-cap">The same question as audio and as text, in English and Arabic
+varieties; the target is a short open-ended answer.
 Photo: <a href="https://commons.wikimedia.org/wiki/File:Nmoq.jpg" rel="noopener" target="_blank">Msarg77</a>,
 <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.</p>
 
