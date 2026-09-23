@@ -17,7 +17,7 @@ changefreq: weekly
         <p class="task-num">Task 1</p>
         <h3>Spoken Visual QA</h3>
         <p class="task-io"><span>Image + spoken question</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span>Short text answer</span></p>
-        <p>The question arrives as speech.</p>
+        <p>Answer a question asked as audio, testing multimodal understanding directly from speech.</p>
         <span class="more">Task details →</span>
       </a>
       <a class="task-card alt" href="/tasks/">
