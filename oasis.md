@@ -1,25 +1,32 @@
 ---
-title: "The OASIS Dataset"
-lede: "The shared task is built on OASIS: images paired with spoken and written questions and open-ended answers, collected across the MENA region."
-description: "OASIS, the multilingual multimodal dataset behind the MMCultureQA SemEval 2027 shared task: what it covers, how to get it, and how to cite it."
+title: "Dataset"
+lede: "The shared task is inspired by OASIS dataset: images paired with spoken and written questions and open-ended answers."
+description: "MMCultureQA SemEval 2027 shared task dataset."
 ctas: [dataset]
 schema_type: "Dataset"
 priority: 0.9
 changefreq: weekly
 ---
 
-## What's inside
+## Dataset
 
-OASIS pairs each image with a question and an open-ended answer, spoken and written. It was
-collected across 18 countries in the MENA region, in English, Modern Standard Arabic,
-Egyptian Arabic, and Levantine Arabic.
+For the **MMCultureQA SemEval 2027** shared task, we are curating language-specific datasets for all participating tracks.
 
-<ul class="stat-grid">
-  <li><b>18</b><span>countries covered</span></li>
-  <li><b>9</b><span>topic categories</span></li>
-  <li><b>31</b><span>sub-categories</span></li>
-  <li><b>4</b><span>language varieties</span></li>
-</ul>
+The datasets for **English, Modern Standard Arabic (MSA), Egyptian Arabic, and Levantine Arabic** are derived from **[OASIS](https://arxiv.org/pdf/2510.06371)**, where each image is paired with culturally grounded questions and open-ended answers in both spoken and written form.
+
+For the remaining languages, we follow the same **EverydayMMQA** data-development pipeline used to curate **OASIS**. The data covers **9 broad cultural topic categories and 31 sub-categories**, including culturally grounded concepts related to places, food, traditions, everyday objects, and social practices.
+
+Language-specific datasets will be **released gradually throughout the shared-task preparation period and before the evaluation phase**. Participants should check this page, the [timeline](/#dates), and the Hugging Face repository for the latest releases.
+
+Below is an example of an image and its associated multimodal QA record.
+
+
+<!-- <ul class="stat-grid"> -->
+  <!-- <li><b>18</b><span>countries covered</span></li> -->
+  <!-- <li><b>9</b><span>topic categories</span></li> -->
+  <!-- <li><b>31</b><span>sub-categories</span></li> -->
+  <!-- <li><b>4</b><span>language varieties</span></li> -->
+<!-- </ul> -->
 
 <div class="record">
   <div class="record-head">
@@ -62,30 +69,29 @@ Photo: <a href="https://commons.wikimedia.org/wiki/File:Nmoq.jpg" rel="noopener"
 
 ## Getting the data
 
-The shared-task data is hosted on [Hugging Face]({{ site.dataset_url }}) and is drawn from
-OASIS, or created with the same framework. Training and development data for the MENA region
-is available now: 10,000 training and 1,000 development items for each track, in English,
-Modern Standard Arabic, Egyptian Arabic, and Levantine Arabic. Each item carries the image,
-the question as text and as audio, and a reference answer. The remaining language tracks
-follow on the schedule in the [timeline](/#dates).
+The shared-task datasets are hosted on [Hugging Face](<{{ site.dataset_url }}>).
+
+Data for individual languages will be **released progressively**, rather than all at once. Please check the [timeline](/#dates) and the Hugging Face repository regularly for the availability of each language-specific dataset.
+
+All language tracks are expected to have the required data available before the corresponding evaluation phase.
 
 ## License
 
-The shared-task dataset is planned for release under the **CC BY-NC-SA 4.0** license: free
-for non-commercial research use, with attribution and share-alike.
+The shared-task dataset is planned for release under the **CC BY-NC-SA 4.0** license: free for non-commercial research use, with attribution and share-alike.
 
 ## Citation
 
-OASIS is described in the paper [arXiv:2510.06371](https://arxiv.org/abs/2510.06371). If you
-use the dataset, please cite:
+If you use the **MMCultureQA** shared-task data, please cite the relevant dataset papers listed below. We will continue to add citations for newly released language-specific datasets as they become available.
 
 {% raw %}
-```bibtex
+
+```
 @article{alam2025everydaymmqa,
   title = {{OASIS}: A Multilingual and Multimodal Dataset for Culturally Grounded Spoken Visual QA},
   author = {Alam, Firoj and Shahroor, Ali Ezzat and Hasan, Md. Arid and Ali, Zien Sheikh and Bhatti, Hunzalah Hassan and Kmainasi, Mohamed Bayan and Chowdhury, Shammur Absar and Mousi, Basel and Dalvi, Fahim and Durrani, Nadir and Milic-Frayling, Natasa},
   journal = {arXiv preprint arXiv:2510.06371},
-  year = {2025},
+  year = {2025}
 }
+
 ```
 {% endraw %}
