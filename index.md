@@ -29,14 +29,14 @@ changefreq: weekly
         <span class="more">Task details →</span>
       </a>
     </div>
-    <p class="section-foot">Each task runs as a separate track per language. See <a href="/tasks/">Tasks &amp; Evaluation</a> and the <a href="/oasis/">OASIS dataset</a>.</p>
+    <p class="section-foot">Each task runs as a separate track per language. See <a href="/tasks/">Tasks &amp; Evaluation</a> and the <a href="/oasis/">dataset</a>.</p>
   </div>
 </section>
 
 <section class="home-section tinted" id="languages">
   <div class="container">
     <p class="kicker">Languages</p>
-    <h2>Eighteen language tracks</h2>
+    <h2>Language tracks</h2>
     <ul class="lang-grid">
       {% for l in site.data.languages %}
       <li>

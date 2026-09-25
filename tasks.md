@@ -25,8 +25,7 @@ questions, and differ only in how the question arrives.
 
 ## Language tracks
 
-Each task is a separate track per language, ranked per track. Eighteen language varieties are
-planned, and you can enter any subset.
+Each task is organized as a separate track for each language, with systems ranked independently within each track. Participants may enter any subset of the available language tracks.
 
 <ul class="chip-row">
   {% for l in site.data.languages %}

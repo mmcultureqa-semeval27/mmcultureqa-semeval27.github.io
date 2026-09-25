@@ -20,9 +20,7 @@ changefreq: weekly
 
 ## Submission
 
-Submissions run through **CodaBench**. The competition link and the submission format will be
-posted here when the evaluation phase opens. A starter kit with data loaders, baselines, and
-the scorer ships with the training data.
+Submissions run through **CodaBench**. The competition link and the submission format will be posted here when the evaluation phase opens. A starter kit with data loaders, baselines, and the scorer ships with the training data.
 
 ## Rules
 
