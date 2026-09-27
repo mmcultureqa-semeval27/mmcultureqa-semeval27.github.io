@@ -388,6 +388,7 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
 .lang-native[data-script="bengali"] { font-family: var(--font-bengali); }
 .lang-native[data-script="devanagari"] { font-family: var(--font-devanagari); }
 .lang-native[data-script="gujarati"] { font-family: var(--font-gujarati); }
+.lang-native[data-script="sinhala"] { font-family: var(--font-sinhala); }
 .lang-native[data-script="ethiopic"] { font-family: var(--font-ethiopic); }
 .lang-en {
   font-size: .76rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
