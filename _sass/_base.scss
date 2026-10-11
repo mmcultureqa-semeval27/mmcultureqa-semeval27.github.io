@@ -360,6 +360,11 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
   font-size: .88rem; font-weight: 600; color: var(--text);
 }
 .chip.confirmed { background: var(--primary-soft); border-color: transparent; color: var(--primary-dark); }
+.chip-soon {
+  margin-left: 5px; padding: 1px 6px; border-radius: 999px;
+  background: var(--soft); color: var(--muted);
+  font-size: .66rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
 .chip-note { font-size: .85rem; color: var(--muted); }
 
 /* Language showcase (home) */
@@ -389,10 +394,50 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
 .lang-native[data-script="devanagari"] { font-family: var(--font-devanagari); }
 .lang-native[data-script="gujarati"] { font-family: var(--font-gujarati); }
 .lang-native[data-script="sinhala"] { font-family: var(--font-sinhala); }
+.lang-native[data-script="telugu"] { font-family: var(--font-telugu); }
+.lang-native[data-script="han"] { font-family: var(--font-han); font-size: 1.5rem; }
 .lang-native[data-script="ethiopic"] { font-family: var(--font-ethiopic); }
+.lang-tile.soon {
+  background: transparent; border-style: dashed; box-shadow: none;
+}
+.lang-tile.soon .lang-native { color: var(--muted); }
+.lang-tile.soon:hover { background: #fff; border-style: solid; }
+.lang-group-label {
+  display: flex; align-items: center; gap: 10px;
+  margin: 26px 0 0; font-size: .74rem; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+}
+.lang-group-label::after {
+  content: ""; flex: 1; height: 1px; background: var(--line);
+}
+.lang-group-label .count { font-weight: 600; letter-spacing: .02em; text-transform: none; }
+.lang-group-label.open { color: var(--primary-dark); }
+.lang-group-label.open::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--primary);
+}
 .lang-en {
   font-size: .76rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
   color: var(--muted);
+}
+
+/* Repo link list + coming-soon note (participate) */
+.repo-links { list-style: none; padding: 0; margin: 16px 0 8px; display: grid; gap: 8px; }
+.repo-links li {
+  margin: 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: #fff; font-size: .92rem; color: var(--muted);
+}
+.repo-links li b { display: inline-block; min-width: 118px; color: var(--ink); }
+.repo-links li a { color: var(--ink); }
+.repo-links li a:hover b { color: var(--primary); }
+.soon-note {
+  display: flex; align-items: flex-start; gap: 10px; flex-wrap: wrap;
+  padding: 14px 16px; border: 1px dashed var(--line-2); border-radius: var(--radius);
+  background: var(--soft); color: var(--text); font-size: .94rem;
+}
+.soon-badge {
+  flex: none; padding: 3px 10px; border-radius: 999px;
+  background: var(--gold); color: #fff;
+  font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
 }
 
 /* Metric cards (evaluation) */

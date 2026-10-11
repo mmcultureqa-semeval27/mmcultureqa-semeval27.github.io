@@ -37,8 +37,13 @@ changefreq: weekly
   <div class="container">
     <p class="kicker">Languages</p>
     <h2>Language tracks</h2>
+
+    {% assign open_langs = site.data.languages | where_exp: "l", "l.available == true" %}
+    {% assign soon_langs = site.data.languages | where_exp: "l", "l.available != true" %}
+
+    <p class="lang-group-label open">Open now <span class="count">{{ open_langs | size }} tracks</span></p>
     <ul class="lang-grid">
-      {% for l in site.data.languages %}
+      {% for l in open_langs %}
       <li>
         <div class="lang-tile">
           <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
@@ -47,7 +52,20 @@ changefreq: weekly
       </li>
       {% endfor %}
     </ul>
-    <p class="section-foot">Enter any subset. Scoring is on <a href="/tasks/">Tasks &amp; Evaluation</a>.</p>
+
+    <p class="lang-group-label">Coming soon <span class="count">{{ soon_langs | size }} tracks</span></p>
+    <ul class="lang-grid">
+      {% for l in soon_langs %}
+      <li>
+        <div class="lang-tile soon">
+          <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
+          <span class="lang-en">{{ l.name }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p class="section-foot">Enter any subset. Scoring is on <a href="/tasks/">Tasks &amp; Evaluation</a>, and the code is on <a href="{{ site.github_url }}" rel="noopener" target="_blank">GitHub</a>.</p>
   </div>
 </section>
 

@@ -14,7 +14,7 @@
 - label: "Evaluation phase begins"
   date: "10 January 2027"
   iso: "2027-01-10"
-  note: "Test inputs released; submissions open on CodaBench."
+  note: "Test inputs released; submissions open."
 - label: "Evaluation phase ends"
   date: "31 January 2027"
   iso: "2027-01-31"

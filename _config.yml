@@ -28,6 +28,7 @@ google_site_verification: "kmJmEWWatLWuYFmV4zCDtvCwnxrf8xOIR9erpQwzceY"
 # Shared links (edit in one place)
 registration_url: "https://docs.google.com/forms/d/15-Vbs82rBF6TCwxT4aAiJDWiiDqPI6uaggz95qStSkQ/viewform"
 dataset_url: "https://huggingface.co/datasets/QCRI/MMCQA-SemEval27"
+github_url: "https://github.com/mmcultureqa-semeval27/mmcultureqa"
 slack_url: "https://join.slack.com/t/mm-eval/shared_invite/zt-4a869o7xc-nP8fMfETqSczgpNDr08fJQ"
 
 sass:

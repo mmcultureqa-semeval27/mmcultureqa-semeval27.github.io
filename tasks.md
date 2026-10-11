@@ -29,9 +29,13 @@ Each task is organized as a separate track for each language, with systems ranke
 
 <ul class="chip-row">
   {% for l in site.data.languages %}
-  <li><span class="chip">{{ l.name }}</span></li>
+  <li><span class="chip{% if l.available %} confirmed{% endif %}">{{ l.name }}{% unless l.available %} <span class="chip-soon">soon</span>{% endunless %}</span></li>
   {% endfor %}
 </ul>
+
+<p class="chip-note">Highlighted tracks are open now on
+<a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. The rest open as
+their data lands, in the same layout, so a system written for one track runs on a new one.</p>
 
 
 ## Evaluation
@@ -56,5 +60,5 @@ Because answers are open-ended, scoring rewards meaning rather than exact wordin
   </div>
 </div>
 
-The official evaluation script ships with the data, so you can reproduce the ranking locally.
-Submissions run on CodaBench; see [Participate](/participate/) for the workflow.
+The [official scorer]({{ site.github_url }}/tree/main/scorer) is on GitHub, so you can reproduce the
+ranking locally before you submit. See [Participate](/participate/) for the submission workflow.

@@ -17,6 +17,7 @@
               {% when "register" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.registration_url }}" rel="noopener" target="_blank">Register your team</a>
               {% when "dataset" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.dataset_url }}" rel="noopener" target="_blank">Open on Hugging Face</a>
               {% when "slack" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.slack_url }}" rel="noopener" target="_blank">Join the Slack</a>
+              {% when "github" %}<a class="btn{% unless forloop.first %} secondary{% endunless %}" href="{{ site.github_url }}" rel="noopener" target="_blank">Code on GitHub</a>
               {% endcase %}
             {% endfor %}
           </p>
