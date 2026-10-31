@@ -6,5 +6,7 @@
   url: "/oasis/"
 - name: "Participate"
   url: "/participate/"
+- name: "FAQ"
+  url: "/faq/"
 - name: "Organizers"
   url: "/organizers/"
