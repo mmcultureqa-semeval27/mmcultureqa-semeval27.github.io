@@ -1,3 +1,8 @@
+- date: "7 November 2026"
+  title: "Leaderboard links are now available"
+  text: "The leaderboard links for Task 1 (Spoken Visual QA) and Task 2 (Textual Visual QA) are now available for Arabic and English. Other languages are coming soon."
+  link: "/participate/#submission"
+  link_text: "View leaderboard links"
 - date: "23 September 2026"
   title: "Training and development data are out"
   text: "The MENA region is released: 10,000 training and 1,000 development items for every track, in English, Modern Standard Arabic, Egyptian Arabic, and Levantine Arabic, with each question available as both text and audio. More language tracks follow."

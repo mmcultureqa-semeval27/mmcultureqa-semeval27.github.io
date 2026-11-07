@@ -14,7 +14,7 @@ changefreq: weekly
   <li>Download the tracks you want from <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. MENA train and dev data is out now; the other tracks follow the <a href="/#dates">timeline</a>.</li>
   <li>Build a system for Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
   <li>Check your scores locally with the <a href="{{ site.github_url }}/tree/main/scorer" rel="noopener" target="_blank">scorer</a>, and validate your file with the <a href="{{ site.github_url }}/tree/main/format_checker" rel="noopener" target="_blank">format checker</a>.</li>
-  <li>Upload your predictions during the evaluation phase. The submission link is coming soon.</li>
+  <li>Upload your predictions during the evaluation phase using the <a href="#submission">submission platform for your task</a>.</li>
   <li>Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
 </ol>
 
@@ -31,7 +31,12 @@ The [code repository]({{ site.github_url }}) holds everything you need to run an
 
 ## Submission
 
-<p class="soon-note"><span class="soon-badge">Coming soon</span> The submission link and the exact file format will be posted here, and announced on <a href="{{ site.slack_url }}" rel="noopener" target="_blank">Slack</a>, when the evaluation phase opens.</p>
+Upload your predictions through the corresponding task page:
+
+- [Task 1: Spoken Visual QA](https://eval.qcri.org/web/challenges/challenge-page/1/overview)
+- [Task 2: Textual Visual QA](https://eval.qcri.org/web/challenges/challenge-page/2/overview)
+
+**Note:** Submissions are currently available for Arabic and English. Other languages are coming soon.
 
 ## Rules
 
