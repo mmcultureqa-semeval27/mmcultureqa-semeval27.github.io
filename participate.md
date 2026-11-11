@@ -38,6 +38,15 @@ Upload your predictions through the corresponding task page:
 
 **Note:** Submissions are currently available for Arabic and English. Other languages are coming soon.
 
+### Submission tutorial
+
+<figure>
+  <video controls playsinline preload="none" width="1910" height="1080" aria-labelledby="submission-tutorial" poster="{{ '/assets/videos/submission-tutorial.jpg' | relative_url }}">
+    <source src="{{ '/assets/videos/submission-tutorial.mp4' | relative_url }}" type="video/mp4">
+  </video>
+  <figcaption>See how to upload predictions and view the leaderboard (1:48). <a href="{{ '/assets/videos/submission-tutorial.mp4' | relative_url }}" download>Download the MP4</a>.</figcaption>
+</figure>
+
 ## Rules
 
 The full rules ship with the [code repository]({{ site.github_url }}). The essentials:
