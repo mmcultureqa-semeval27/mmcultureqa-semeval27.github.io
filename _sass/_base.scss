@@ -319,6 +319,9 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
   display: block; border: 1px solid var(--line); border-radius: var(--radius);
   background: #fff; box-shadow: var(--shadow-sm);
 }
+.content figure video {
+  display: block; width: 100%; height: auto; border-radius: var(--radius);
+}
 .content figcaption { color: var(--muted); font-size: .86rem; margin-top: .6rem; }
 
 /* Tables */
