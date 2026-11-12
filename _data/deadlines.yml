@@ -7,10 +7,15 @@
   iso: "2026-09-23"
   note: "Training and development data for the MENA region, in English and three Arabic varieties."
   released: true
-- label: "More language tracks"
+- label: "Thirteen more language tracks"
+  date: "10 November 2026"
+  iso: "2026-11-10"
+  note: "Training and development data for Italian, Turkish, Urdu, Bangla, Hindi, Marathi, Gujarati, Telugu, Assamese, Nepali, Sinhala, Swahili, and Amharic."
+  released: true
+- label: "Devtest and remaining languages"
   date: "To be announced"
   iso: "2026-12-31"
-  note: "The remaining language tracks, and the devtest set the development phase is scored on."
+  note: "The devtest set for the thirteen new tracks, then Brazilian Portuguese, Spanish, Chinese, Oromo, and Somali."
 - label: "Evaluation phase begins"
   date: "10 January 2027"
   iso: "2027-01-10"

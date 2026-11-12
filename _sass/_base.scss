@@ -422,6 +422,8 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.2; letter-s
   font-size: .76rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
   color: var(--muted);
 }
+.lang-country { font-size: .78rem; color: var(--muted); }
+.lang-tile.soon .lang-country { opacity: .8; }
 
 /* Repo link list + coming-soon note (participate) */
 .repo-links { list-style: none; padding: 0; margin: 16px 0 8px; display: grid; gap: 8px; }

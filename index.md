@@ -38,16 +38,34 @@ changefreq: weekly
     <p class="kicker">Languages</p>
     <h2>Language tracks</h2>
 
-    {% assign open_langs = site.data.languages | where_exp: "l", "l.available == true" %}
+    {% assign full_langs = site.data.languages | where: "splits", "Train · Dev · Devtest" %}
+    {% assign td_langs = site.data.languages | where: "splits", "Train · Dev" %}
     {% assign soon_langs = site.data.languages | where_exp: "l", "l.available != true" %}
+    {% assign open_count = full_langs.size | plus: td_langs.size %}
 
-    <p class="lang-group-label open">Open now <span class="count">{{ open_langs | size }} tracks</span></p>
+    <p class="section-intro">{{ open_count }} tracks are open on <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. Every question comes as text and as audio; the test set uses human recordings.</p>
+
+    <p class="lang-group-label open">Train, dev and devtest <span class="count">{{ full_langs | size }} tracks</span></p>
     <ul class="lang-grid">
-      {% for l in open_langs %}
+      {% for l in full_langs %}
       <li>
         <div class="lang-tile">
           <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
           <span class="lang-en">{{ l.name }}</span>
+          <span class="lang-country">{{ l.country }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p class="lang-group-label open">Train and dev <span class="count">{{ td_langs | size }} tracks · devtest coming</span></p>
+    <ul class="lang-grid">
+      {% for l in td_langs %}
+      <li>
+        <div class="lang-tile">
+          <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
+          <span class="lang-en">{{ l.name }}</span>
+          <span class="lang-country">{{ l.country }}</span>
         </div>
       </li>
       {% endfor %}
@@ -60,6 +78,7 @@ changefreq: weekly
         <div class="lang-tile soon">
           <span class="lang-native" data-script="{{ l.script }}" lang="{{ l.code }}"{% if l.rtl %} dir="rtl"{% endif %}>{{ l.native }}</span>
           <span class="lang-en">{{ l.name }}</span>
+          <span class="lang-country">{{ l.country }}</span>
         </div>
       </li>
       {% endfor %}
