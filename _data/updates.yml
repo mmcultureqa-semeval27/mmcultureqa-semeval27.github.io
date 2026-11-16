@@ -1,3 +1,8 @@
+- date: "16 November 2026"
+  title: "Devtest and leaderboards for all seventeen tracks"
+  text: "The devtest set is now out for the thirteen new tracks (up to 1,000 items each, questions only), and the dev-test leaderboards on EvalAI are open for all seventeen released tracks, for both the spoken and the textual task."
+  link: "/participate/#submission"
+  link_text: "Submit on EvalAI"
 - date: "10 November 2026"
   title: "Thirteen more language tracks are out"
   text: "Training and development data are now available for Italian, Turkish, Urdu, Bangla, Hindi, Marathi, Gujarati, Telugu, Assamese, Nepali, Sinhala, Swahili, and Amharic: up to 10,000 training and 1,000 development items per track, each question as text and audio. Spoken questions in train and dev are synthetic; the test set uses human recordings. Devtest for these tracks follows."

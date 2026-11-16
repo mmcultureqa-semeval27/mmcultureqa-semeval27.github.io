@@ -11,10 +11,10 @@ changefreq: weekly
 
 <ol class="steps">
   <li>Fill in the <a href="{{ site.registration_url }}" rel="noopener" target="_blank">registration form</a> and accept the dataset usage terms.</li>
-  <li>Download the tracks you want from <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. The four MENA tracks have train, dev and devtest data, and thirteen more tracks have train and dev data; the rest follow the <a href="/#dates">timeline</a>.</li>
+  <li>Download the tracks you want from <a href="{{ site.dataset_url }}" rel="noopener" target="_blank">Hugging Face</a>. Seventeen tracks have train, dev and devtest data; the rest follow the <a href="/#dates">timeline</a>.</li>
   <li>Build a system for Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
   <li>Check your scores locally with the <a href="{{ site.github_url }}/tree/main/scorer" rel="noopener" target="_blank">scorer</a>, and validate your file with the <a href="{{ site.github_url }}/tree/main/format_checker" rel="noopener" target="_blank">format checker</a>.</li>
-  <li>Upload your predictions during the evaluation phase using the <a href="#submission">submission platform for your task</a>.</li>
+  <li>Upload your devtest predictions now, and your test predictions during the evaluation phase, on the <a href="#submission">submission platform for your task</a>.</li>
   <li>Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
 </ol>
 
@@ -36,7 +36,7 @@ Upload your predictions through the corresponding task page:
 - [Task 1: Spoken Visual QA](https://eval.qcri.org/web/challenges/challenge-page/1/overview)
 - [Task 2: Textual Visual QA](https://eval.qcri.org/web/challenges/challenge-page/2/overview)
 
-**Note:** Submissions are currently open for the MENA tracks (Arabic and English). Other languages open as their devtest is released.
+**Note:** The dev-test phase is open now for all seventeen released tracks; pick your language in the Language field when you upload. The test phase opens with the evaluation period in January.
 
 ### Submission tutorial
 

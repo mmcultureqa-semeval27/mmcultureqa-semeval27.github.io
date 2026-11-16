@@ -12,10 +12,15 @@
   iso: "2026-11-10"
   note: "Training and development data for Italian, Turkish, Urdu, Bangla, Hindi, Marathi, Gujarati, Telugu, Assamese, Nepali, Sinhala, Swahili, and Amharic."
   released: true
-- label: "Devtest and remaining languages"
+- label: "Devtest for the thirteen new tracks"
+  date: "16 November 2026"
+  iso: "2026-11-16"
+  note: "Devtest questions on Hugging Face; the dev-test leaderboards on EvalAI are open for all seventeen tracks."
+  released: true
+- label: "Remaining languages"
   date: "To be announced"
   iso: "2026-12-31"
-  note: "The devtest set for the thirteen new tracks, then Brazilian Portuguese, Spanish, Chinese, Oromo, and Somali."
+  note: "Brazilian Portuguese, Spanish, Chinese, Oromo, and Somali."
 - label: "Evaluation phase begins"
   date: "10 January 2027"
   iso: "2027-01-10"

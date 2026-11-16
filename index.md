@@ -58,6 +58,7 @@ changefreq: weekly
       {% endfor %}
     </ul>
 
+    {% if td_langs.size > 0 %}
     <p class="lang-group-label open">Train and dev <span class="count">{{ td_langs | size }} tracks · devtest coming</span></p>
     <ul class="lang-grid">
       {% for l in td_langs %}
@@ -70,6 +71,7 @@ changefreq: weekly
       </li>
       {% endfor %}
     </ul>
+    {% endif %}
 
     <p class="lang-group-label">Coming soon <span class="count">{{ soon_langs | size }} tracks</span></p>
     <ul class="lang-grid">
