@@ -50,7 +50,19 @@ This depends on the task policy. If this is relevant to your team, contact the o
 <details class="faq-item" markdown="1">
 <summary>Which models and methods can I use?</summary>
 
-Pretrained models and public external data are permitted; document what you use in your system paper. Follow the [participation rules]({{ '/participate/#rules' | relative_url }}) and any additional limits announced by the organizers.
+Any open-weight model, in any configuration or setup: zero-shot, prompting, fine-tuning, retrieval, ensembles, or a pipeline of several models. The only requirement is that every model in your system has publicly released weights. Public external data is also permitted. Document every model and dataset you use in your system paper. See the [participation rules]({{ '/participate/#rules' | relative_url }}).
+</details>
+
+<details class="faq-item" markdown="1">
+<summary>Can I use an API instead of running the model myself?</summary>
+
+Yes, as long as the model behind the API is open-weight. For example, calling an open-weight model through a hosted inference provider is fine.
+</details>
+
+<details class="faq-item" markdown="1">
+<summary>Can I use closed models such as GPT, Gemini or Claude?</summary>
+
+No. Closed models are not allowed, whether through an API or a chat interface.
 </details>
 </section>
 
@@ -80,9 +92,9 @@ The data is available from the [MMCultureQA dataset on Hugging Face]({{ site.dat
 ## Paper Requirements
 
 <details class="faq-item" open markdown="1">
-<summary>Are all participating teams eligible to submit a system description paper?</summary>
+<summary>Do I have to submit a system description paper?</summary>
 
-Yes. All participating teams are eligible to submit a system description paper. Acceptance is subject to peer review and compliance with SemEval submission guidelines.
+Yes. Every participating team must submit a system description paper after the evaluation period. Acceptance is subject to peer review and compliance with the SemEval submission guidelines.
 </details>
 
 <details class="faq-item" markdown="1">

@@ -15,7 +15,7 @@ changefreq: weekly
   <li>Build a system for Task 1 (spoken), Task 2 (textual), or both, in whichever language tracks you choose.</li>
   <li>Check your scores locally with the <a href="{{ site.github_url }}/tree/main/scorer" rel="noopener" target="_blank">scorer</a>, and validate your file with the <a href="{{ site.github_url }}/tree/main/format_checker" rel="noopener" target="_blank">format checker</a>.</li>
   <li>Upload your devtest predictions now, and your test predictions during the evaluation phase, on the <a href="#submission">submission platform for your task</a>.</li>
-  <li>Describe your system in a paper for the SemEval 2027 proceedings and present it at the workshop.</li>
+  <li>Submit a system description paper for the SemEval 2027 proceedings (required for every team) and present it at the workshop.</li>
 </ol>
 
 ## Code
@@ -54,8 +54,13 @@ The full rules ship with the [code repository]({{ site.github_url }}). The essen
 - Enter any subset. Systems are ranked per task and per track.
 - The official ranking metric is BERTScore F1, described under
   [Evaluation](/tasks/#evaluation).
-- Pretrained models and public external data are permitted; document what you used. Any
-  limits will be stated at the data release.
+- **Open-weight models only.** Any architecture, pipeline, fine-tuning or prompting setup is
+  allowed, as long as every model in your system has publicly released weights. You may run
+  them yourself or call them through a hosted API. Closed models such as GPT, Gemini or Claude
+  are not allowed.
+- Public external data is permitted. Document every model and dataset you used.
+- **A system description paper is mandatory.** Every participating team must submit one after
+  the evaluation period.
 - The data is licensed for non-commercial research use; see
   [the dataset page](/oasis/#license).
 
